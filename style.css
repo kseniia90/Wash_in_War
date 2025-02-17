@@ -809,12 +809,11 @@ input[type=number] {
 .top-banner {
   position: relative;
   margin-top: -148px;
-  padding-top: 98px;
+  padding-top: 148px;
   overflow: hidden;
   background-size: cover;
-  background-position: center;
+  background-position: top center;
 }
-
 .top-banner::after {
   content: "";
   display: block;
@@ -824,6 +823,17 @@ input[type=number] {
   left: 0;
   right: 0;
   bottom: 0;
+}
+.top-banner .banner-title {
+  font-family: var(--title-font-family);
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 58px;
+  margin-bottom: 24px;
+}
+.top-banner .desc {
+  margin: 0 auto 35px;
+  max-width: 550px;
 }
 
 .top-banner-content {
@@ -836,45 +846,7 @@ input[type=number] {
 
 .homepage .top-banner-content {
   max-width: 700px;
-  margin: 140px auto 264px auto;
-}
-
-.top-banner .subtitle {
-  font-family: var(--title-font-family);
-  font-size: 20px;
-  text-transform: uppercase;
-  font-weight: 400;
-  line-height: 22px;
-  letter-spacing: 0.04em;
-  margin-bottom: 10px;
-}
-
-.top-banner .banner-title {
-  font-family: var(--title-font-family);
-  font-size: 95px;
-  font-weight: 400;
-  line-height: 102px;
-  margin-bottom: 30px;
-}
-
-.top-banner .desc {
-  margin-bottom: 35px;
-}
-
-.top-banner .button-group {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-}
-
-.top-banner .btn {
-  font-size: 18px;
-  line-height: 28px;
-}
-
-.top-banner .btn.play-icon {
-  padding: 8px 15px 12px 18px;
+  margin: 140px auto 270px auto;
 }
 
 .cards-slider {

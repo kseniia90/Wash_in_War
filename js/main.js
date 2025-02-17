@@ -161,94 +161,44 @@ document.querySelectorAll('.tablinks').forEach((el) => {
 
 // sliders
 
-new Swiper('.cards-slider .swiper', {
-  slidesPerView: 1,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  breakpoints: {
-    640: {
-      slidesPerView: 2,
-    },
-    768: {
-      slidesPerView: 3,
-    }
-  }
+new Swiper('.slider-gallery', {
+  effect: "coverflow",
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: "auto",
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: true,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
 });
 
-new Swiper('.project-cards-slider', {
-  slidesPerView: 1,
-  spaceBetween: 30,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  breakpoints: {
-    640: {
-      slidesPerView: 2,
-    },
-    768: {
-      slidesPerView: 3,
-    }
-  }
-});
 
-new Swiper('.team-slider', {
-  slidesPerView: 2,
-  spaceBetween: 10,
-  pagination: {
-    el: ".team-slider .swiper-pagination",
-    clickable: true,
-  },
-  breakpoints: {
-    640: {
-      slidesPerView: 3,
-    },
-    768: {
-      slidesPerView: 4,
-      spaceBetween: 30,
-    }
-  }
-});
-
-new Swiper('.doc-slider', {
-  slidesPerView: 2,
-  spaceBetween: 46,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  breakpoints: {
-    640: {
-      slidesPerView: 3,
-    },
-    768: {
-      slidesPerView: 4,
-    }
-  }
-});
-
-const galleryThumb = new Swiper('.project-gallery .thumb', {
-  spaceBetween: 10,
-  slidesPerView: 5,
-  freeMode: true,
-  watchSlidesProgress: true,
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-});
-new Swiper('.project-gallery .stage', {
-  spaceBetween: 10,
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-  thumbs: {
-    swiper: galleryThumb
-  },
-});
+// const galleryThumb = new Swiper('.project-gallery .thumb', {
+//   spaceBetween: 10,
+//   slidesPerView: 5,
+//   freeMode: true,
+//   watchSlidesProgress: true,
+//   navigation: {
+//     nextEl: ".swiper-button-next",
+//     prevEl: ".swiper-button-prev",
+//   },
+// });
+// new Swiper('.project-gallery .stage', {
+//   spaceBetween: 10,
+//   navigation: {
+//     nextEl: ".swiper-button-next",
+//     prevEl: ".swiper-button-prev",
+//   },
+//   thumbs: {
+//     swiper: galleryThumb
+//   },
+// });
 
 const overlay = document.getElementById('overlay');
 const popup = document.getElementById('popup');
@@ -268,3 +218,12 @@ document.querySelectorAll('#popup .close-btn, #overlay').forEach((el) => el.addE
   fadeOut(popup);
   document.body.classList.remove('popup-open');
 }));
+
+//show more
+
+document.querySelectorAll('.show-more').forEach((el) => {
+  el.addEventListener('click', (event) => {
+    event.preventDefault();
+    event.target.closest('.col').classList.toggle('desc-show');
+  });
+});

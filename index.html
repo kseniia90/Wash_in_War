@@ -7,7 +7,8 @@
     <link rel="icon" href="img/favicon.png">
     <title>WASH in WAR</title>
     <link rel="stylesheet" href="lib/swiper/swiper-bundle.min.css">
-    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="lib/wow/animate.min.css">
+    <link href="style.css?1" rel="stylesheet">
 </head>
 
 <body>
@@ -47,7 +48,7 @@
     <main>
         <div class="top-banner homepage" style="background-image: url('img/banner-home.jpg');">
             <div class="container">
-                <div class="top-banner-content">
+                <div class="top-banner-content wow bounceInUp">
                     <div class="banner-title">
                         <p>WASH in WAR –</p>інформаційно-просвітницька кампанія
                     </div>
@@ -61,7 +62,7 @@
         <div class="bg">
             <div class="container">
 
-                <div class="mission">
+                <div class="mission wow bounceInUp">
                     <p class="uppercase">Місія</p>
                     <p class="title-light">Ми прагнемо привернути увагу до катастрофічних наслідків війни для водних
                         ресурсів в Україні та
@@ -69,7 +70,7 @@
                         цих наслідків.</p>
                 </div>
 
-                <div class="effect">
+                <div class="effect wow bounceInUp">
                     <p class="title">
                         Наслідки російських атак на критичну інфраструктуру
                     </p>
@@ -102,7 +103,7 @@
                 </div>
 
                 <div class="title-block">
-                    <p class="title-light">Це не просто цифри – це реальність, у якій живуть мільйони людей</p>
+                    <p class="title-light wow bounceInUp">Це не просто цифри – це реальність, у якій живуть мільйони людей</p>
                 </div>
 
                 <div class="map" id="map">
@@ -165,7 +166,7 @@
                                 <img src="./img/gallery/gallery-5.jpg" />
                             </div>
                         </div>
-                        <div class="swiper-pagination"></div>
+                        <!-- <div class="swiper-pagination"></div> -->
                     </div>
                 </div>
 
@@ -175,14 +176,14 @@
 
         <div class="container">
             <div class="title-block title-block2">
-                <p class="title-light">Карітас України активно працює над реалізацією програми допомоги у сфері води,
+                <p class="title-light wow bounceInUp">Карітас України активно працює над реалізацією програми допомоги у сфері води,
                     санітарії та гігієни (WASH) для постраждалих регіонів.</p>
             </div>
         </div>
 
         <div class="what-we-do container">
-            <p class="title">Що ми робимо?</p>
-            <div class="row">
+            <p class="title wow bounceInUp">Що ми робимо?</p>
+            <div class="row wow bounceInUp">
                 <div class="item">
                     <img src="./img/wwd_1.svg" alt="icon" width="100" height="100">
                     <p class="subtitle">Відновлюємо джерела водопостачання</p>
@@ -274,7 +275,7 @@
             <div class="quote">
                 <div class="left">
                     <img src="./img/quote.svg" alt="icon" width="100" height="100">
-                    <div class="col">
+                    <div class="col wow bounceInUp" style="animation-delay: .7s;">
                         <p class="desc">Ми прагнемо підтримати постраждале від війни населення та громади в їхніх зусиллях вийти з
                             кризи та забезпечити доступ до базових потреб у секторах водопостачання, санітарії та
                             гігієни.</p>
@@ -283,7 +284,7 @@
                         <p class="position">Керівниця програми WASH, Карітас Україна</p>
                     </div>
                 </div>
-                <div class="img">
+                <div class="img wow bounceInUp">
                     <img src="./img/quote_2.png" alt="intro" width="380" height="593">
                 </div>
             </div>
@@ -447,6 +448,7 @@
         </div>
     </footer>
 
+    <script src="lib/wow/wow.min.js"></script>
     <script src="lib/swiper/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
 </body>

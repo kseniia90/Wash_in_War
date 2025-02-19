@@ -190,32 +190,11 @@ new Swiper('.slider-gallery', {
         modifier: 1,
         slideShadows: true,
       },
-      pagination: {
-        el: ".swiper-pagination",
-      },
+      // pagination: {
+      //   el: ".swiper-pagination",
+      // },
 });
 
-
-// const galleryThumb = new Swiper('.project-gallery .thumb', {
-//   spaceBetween: 10,
-//   slidesPerView: 5,
-//   freeMode: true,
-//   watchSlidesProgress: true,
-//   navigation: {
-//     nextEl: ".swiper-button-next",
-//     prevEl: ".swiper-button-prev",
-//   },
-// });
-// new Swiper('.project-gallery .stage', {
-//   spaceBetween: 10,
-//   navigation: {
-//     nextEl: ".swiper-button-next",
-//     prevEl: ".swiper-button-prev",
-//   },
-//   thumbs: {
-//     swiper: galleryThumb
-//   },
-// });
 
 const overlay = document.getElementById('overlay');
 const popup = document.getElementById('popup');
@@ -244,3 +223,7 @@ document.querySelectorAll('.show-more').forEach((el) => {
     event.target.closest('.col').classList.toggle('desc-show');
   });
 });
+
+// WOW animation
+
+new WOW().init();

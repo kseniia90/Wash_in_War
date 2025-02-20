@@ -176,8 +176,7 @@ document.querySelectorAll('.col2 .tablinks').forEach((el) => {
 });
 // tab on home-page END
 
-// sliders
-
+// sliders 
 new Swiper('.slider-gallery', {
   effect: "coverflow",
       grabCursor: true,
@@ -190,10 +189,25 @@ new Swiper('.slider-gallery', {
         modifier: 1,
         slideShadows: true,
       },
-      // pagination: {
-      //   el: ".swiper-pagination",
-      // },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
 });
+
+new Swiper(".slider-story", {
+  freeMode: true,
+  loop: true,
+  slidesPerView: "auto",
+  centeredSlides: true,
+  spaceBetween: 15,
+  navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+  },
+});
+
+
 
 
 const overlay = document.getElementById('overlay');
@@ -217,13 +231,40 @@ document.querySelectorAll('#popup .close-btn, #overlay').forEach((el) => el.addE
 
 //show more
 
-document.querySelectorAll('.show-more').forEach((el) => {
-  el.addEventListener('click', (event) => {
-    event.preventDefault();
-    event.target.closest('.col').classList.toggle('desc-show');
-  });
-});
+// document.querySelectorAll('.open-story').forEach((el) => {
+//   el.addEventListener('click', (event) => {
+//     event.preventDefault();
+//     event.target.closest('.col').classList.toggle('desc-show');
+//   });
+// });
 
 // WOW animation
 
 new WOW().init();
+
+//  story popup
+
+document.querySelectorAll('.open-story').forEach(function(openBtn) {
+  openBtn.addEventListener('click', openStoryPopup)
+})
+
+function openStoryPopup(event){
+  
+  let popupId = event.currentTarget.getAttribute("data-popup");   
+  let popup = document.getElementById(popupId);
+
+  if (popup !== null) {
+    
+    document.body.style.overflow = "hidden";
+    popup.classList.add("active");
+
+    window.addEventListener("click", function (e) {
+    
+      if (e.target.closest(".story_popup .close_popup")) {
+        e.preventDefault();
+        popup.classList.remove("active");
+        document.body.style.overflow = "auto";
+      }
+    });
+  }
+}

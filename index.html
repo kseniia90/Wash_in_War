@@ -16,7 +16,7 @@
         <div class="container">
             <div class="site-logo">
                 <a href="index.html">
-                    <img src="img/logo.svg" class="desktop-only"  width="237" height="48" alt="logo">
+                    <img src="img/logo.svg" class="desktop-only" width="237" height="48" alt="logo">
                     <img src="img/logo-m.svg" class="mobile-only" width="31" height="40" alt="logo">
                 </a>
             </div>
@@ -48,7 +48,7 @@
     <main>
         <div class="top-banner homepage" style="background-image: url('img/banner-home.jpg');">
             <div class="container">
-                <div class="top-banner-content wow fadeInUp">
+                <div class="top-banner-content wow fadeInUp" style="animation-delay: .2s;">
                     <div class="banner-title">
                         <p>WASH in WAR –</p>інформаційно-просвітницька кампанія
                     </div>
@@ -62,7 +62,7 @@
         <div class="bg">
             <div class="container">
 
-                <div class="mission wow fadeInUp" style="animation-delay: .3s;">
+                <div class="mission wow fadeInUp" style="animation-delay: .4s;">
                     <p class="uppercase">Місія</p>
                     <p class="title-light">Ми прагнемо привернути увагу до катастрофічних наслідків війни для водних
                         ресурсів в Україні та
@@ -70,7 +70,7 @@
                         цих наслідків.</p>
                 </div>
 
-                <div class="effect wow fadeInUp">
+                <div class="effect wow fadeInUp" style="animation-delay: .3s;">
                     <p class="title">
                         Наслідки російських атак на критичну інфраструктуру
                     </p>
@@ -102,8 +102,10 @@
                     </div>
                 </div>
 
-                <div class="title-block">
-                    <p class="title-light wow fadeInUp" style="animation-delay: .6s;">Це не просто цифри – це реальність, у якій живуть мільйони людей</p>
+                <div class="title-block wow fadeInUp" style="animation-delay: .7s;">
+                    <p class="title-light">Це не просто цифри – це
+                        реальність, у якій живуть мільйони людей</p>
+                    <a href="./img/logo.svg" download="logo.svg" class="btn download-btn">Завантажити аналітику</a>
                 </div>
 
                 <div class="map" id="map">
@@ -166,7 +168,8 @@
                                 <img src="./img/gallery/gallery-5.jpg" />
                             </div>
                         </div>
-                        <!-- <div class="swiper-pagination"></div> -->
+                        <div class="swiper-button swiper-button-next">&nbsp;</div>
+                        <div class="swiper-button swiper-button-prev">&nbsp;</div>
                     </div>
                 </div>
 
@@ -176,7 +179,8 @@
 
         <div class="container">
             <div class="title-block title-block2">
-                <p class="title-light wow fadeInUp">Карітас України активно працює над реалізацією програми допомоги у сфері води,
+                <p class="title-light wow fadeInUp" style="animation-delay: .3s;">Карітас України активно працює над
+                    реалізацією програми допомоги у сфері води,
                     санітарії та гігієни (WASH) для постраждалих регіонів.</p>
             </div>
         </div>
@@ -216,7 +220,9 @@
         <div class="container">
             <div class="results">
                 <p class="title">Результати</p>
-                <p class="title-light"> У 2024 році WASH-проєкти Карітасу України вже допомогли 200 000 людей у Донецькій, Дніпропетровській, Харківській, Запорізькій та Миколаївській областях. Але потреби зростають щодня.</p>
+                <p class="title-light"> У 2024 році WASH-проєкти Карітасу України вже допомогли 200 000 людей у
+                    Донецькій, Дніпропетровській, Харківській, Запорізькій та Миколаївській областях. Але потреби
+                    зростають щодня.</p>
             </div>
             <div class="stories" id="stories">
                 <p class="title">Історії людей з постраждалих регіонів</p>
@@ -229,11 +235,12 @@
                                 Після підриву росіянами Каховської ГЕС її будинок опинився у водяному полоні.  «Вода
                                 піднялася у дворі на 2 метри, в будинку до 1,70 м. Досі на стінах залишаються розводи,
                                 що нагадують про пережите», –  розповідає жінка.  На фото будинок після затоплення –
-                                купа бруду, розбухлі меблі, цвіль на стінах, непрацююча техніка. “Ми втратили майже все
-                                – меблі, техніку, запаси їжі. Вода зруйнувала піч, у якій ми пекли хліб, і затопила
-                                погріб. Лише на ліквідацію наслідків знадобилося 5 місяців, а відновлення будинку все ще
-                                триває”, –  з сумом каже жінка.</p>
-                            <button class="btn show-more">Читати більше</button>
+                                купа бруду, розбухлі
+                                меблі, цвіль на стінах, непрацююча техніка. “Ми втратили майже все – меблі, техніку,
+                                запаси їжі. Вода зруйнувала піч, у якій ми пекли хліб, і затопила погріб. Лише на
+                                ліквідацію наслідків знадобилося 5 місяців, а відновлення будинку все ще триває”, –  з
+                                сумом каже жінка.</p>
+                            <button class="btn open-story" data-popup="popup-1">Читати більше</button>
                         </div>
                         <div class="col-img">
                             <img src="./img/stories_1.jpg" alt="img" width="469" height="309">
@@ -245,22 +252,50 @@
                             <img src="./img/stories_2.jpg" alt="img" width="469" height="309">
                         </div>
                         <div class="col">
-                            <p class="subtitle">Отруєння річки Десна в результаті підриву відстійників на цукровому
-                                заводі в Тьоткіно</p>
-                            <p class="desc">Забруднення Сейму дісталося Десни, в яку він впадає, влада
-                                Чернігівщини повідомляє про потемніння води та мор риби.</p>
-                            <button class="btn show-more">Читати більше</button>
+                            <p class="subtitle">Люди опинилися перед щоденним викликом пошуку води для базових потреб
+                            </p>
+                            <p class="desc">Селище Новоолександрівка Запорізької області — одна з багатьох громад
+                                України, яка зіштовхнулась із проблемою доступу до питної води внаслідок війни. 
+                                “Після підриву Каховської ГЕС проблема водопостачання у нашому регіоні стала критичною.
+                                Русло Дніпра обміліло, багато населених пунктів залишилися без води навіть для технічних
+                                потреб. Наша громада теж постраждала – люди опинилися перед щоденним викликом пошуку
+                                води для базових потреб”, – розповідає голова громади Олександр Корнієнко. 
+                                Але ми не залишилися наодинці з цією бідою. Карітас Запоріжжя з перших днів
+                                повномасштабного вторгнення стоїть поруч із нашими мешканцями, надаючи всебічну
+                                підтримку: продовольча допомога, відновлення пошкодженого житла, а тепер – вирішення
+                                проблем з водопостачанням.
+                                У 2024 році, завдяки Карітас Норвегія у нашій громаді вдалося відновити ключові об’єкти
+                                децентралізованого водопостачання:
+                                Веселянка – відновлено свердловину, встановлено насосну станцію та фільтраційну систему
+                                для питної води.
+                                Юльївка – встановлено фільтраційну станцію, яка не лише забезпечує мешканців якісною
+                                водою, а й дає змогу доставляти її у сусідні села.
+                                Це не просто допомога – це справжній порятунок для нашої громади. Адже без води немає
+                                життя.
+                            </p>
+                            <button class="btn open-story" data-popup="popup-2">Читати більше</button>
                         </div>
                     </div>
 
                     <div class="item">
                         <div class="col">
-                            <p class="subtitle">Порятунок з лівобережжя: Катерину з дітьми вдалось евакуювати на правий
-                                берег</p>
-                            <p class="desc">Вода підіймалась дуже швидко, тобто щопівгодини, мабуть, на сантиметрів
-                                десять. Дуже швидко, стрімко, просто на очах. Як у фільмі "Титанік", знаєте, як вода
-                                коридорами йшла?</p>
-                            <button class="btn show-more">Читати більше</button>
+                            <p class="subtitle">Це не лише вода, це відчуття, що про нас не забувають</p>
+                            <p class="desc">Ще одна героїня нашого проєкту – Валентина Миколаївна, 73-річна пенсіонерка
+                                з Краматорська, яке перебуває під постійними російськими обстрілами. 
+                                У жовтні 2024 року мешканці міста мали воду лише раз на три дні, адже внаслідок
+                                обстрілів постраждало ключове підприємство, що забезпечує область питною водою. 
+                                На жаль, прифронтові громади мають часто мають проблеми з водопостачанням через бойові
+                                дії. 
+                                Але навіть попри складні часи, пані Валентина не втрачає оптимізму. Життєрадісна,
+                                енергійна та сповнена сил вона продовжує вести активне життя та дбати про свою родину.
+                                Кілька разів Валентина Миколаївна вже приходила по питну воду, яку доставляє наша
+                                команда, і щоразу залишалася задоволена її якістю. Для неї це не просто пляшка води – це
+                                можливість економити бюджет та спрямовувати заощаджені кошти на інші нагальні потреби.
+                                "Я дуже вдячна всім, хто долучається до цього проєкту. Ваша допомога насправді важлива
+                                для нас. Це не лише вода, це відчуття, що про нас не забувають", – ділиться жінка.
+                                Ця історія – яскраво демонструє, наскільки важливою є підтримка.
+                            </p>
+                            <button class="btn open-story" data-popup="popup-3">Читати більше</button>
                         </div>
                         <div class="col-img">
                             <img src="./img/stories_3.jpg" alt="img" width="469" height="309">
@@ -280,7 +315,8 @@
                 <div class="left">
                     <img src="./img/quote.svg" alt="icon" width="100" height="100">
                     <div class="col wow fadeInUp" style="animation-delay: .7s;">
-                        <p class="desc">Ми прагнемо підтримати постраждале від війни населення та громади в їхніх зусиллях вийти з
+                        <p class="desc">Ми прагнемо підтримати постраждале від війни населення та громади в їхніх
+                            зусиллях вийти з
                             кризи та забезпечити доступ до базових потреб у секторах водопостачання, санітарії та
                             гігієни.</p>
 
@@ -288,7 +324,7 @@
                         <p class="position">Керівниця програми WASH, Карітас Україна</p>
                     </div>
                 </div>
-                <div class="img wow fadeInUp">
+                <div class="img wow fadeInUp" style="animation-delay: .3s;">
                     <img src="./img/quote_2.png" alt="intro" width="380" height="593">
                 </div>
             </div>
@@ -309,7 +345,7 @@
                                 </form>
                             </div>
                             <div id="tab-content-2" class="tab-content">
-                                
+
                             </div>
 
                         </div>
@@ -404,13 +440,64 @@
                                         <span>CHARITABLE DONATION FOR EA</span>
                                     </div>
                                 </div>
-                                
+
                             </div>
 
                         </div>
                     </div>
                 </div>
 
+            </div>
+        </div>
+
+        <!-- story popup -->
+        <div class="popup story_popup" id="popup-1">
+            <div class="popup-dialog story_popup-dialog">
+                <div class="popup-content story_popup-content">
+                    <div class="popup-header story_popup-header">
+                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1L17 17" stroke="#0D0D0D"/>
+                            <path d="M17 1L1 17" stroke="#0D0D0D"/>
+                            </svg>
+                            
+                    </div>
+                    <div class="popup-body story_popup-body">
+                        <div class="item">
+                            <div class="col-img">
+                                <div class="swiper slider-story">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img src="./img/stories_1.jpg" />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="./img/stories_2.jpg" />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="./img/stories_3.jpg" />
+                                        </div>
+                                    </div>
+                                    <div class="swiper-button swiper-button-next">&nbsp;</div>
+                                    <div class="swiper-button swiper-button-prev">&nbsp;</div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <p class="subtitle">Після підриву росіянами Каховської ГЕС будинок пані Людмили опинився у
+                                    водяному полоні</p>
+                                <p class="desc">На фото пані Людмила з Нововасилівки Снігурівської ОТГ на Миколаївщині.
+                                    Після підриву росіянами Каховської ГЕС її будинок опинився у водяному полоні.  «Вода
+                                    піднялася у дворі на 2 метри, в будинку до 1,70 м. Досі на стінах залишаються розводи,
+                                    що нагадують про пережите», –  розповідає жінка.  На фото будинок після затоплення –
+                                    купа бруду, розбухлі
+                                    меблі, цвіль на стінах, непрацююча техніка. “Ми втратили майже все – меблі, техніку,
+                                    запаси їжі. Вода зруйнувала піч, у якій ми пекли хліб, і затопила погріб. Лише на
+                                    ліквідацію наслідків знадобилося 5 місяців, а відновлення будинку все ще триває”, –  з
+                                    сумом каже жінка.</p>
+                            </div>
+                        </div>
+                            
+                        
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -433,7 +520,7 @@
                         <li>вул. Озаркевича, 4,</li>
                         <li>79016 Львів</li>
                         <li>secretary[at]caritas.ua</li>
-                    </ul>                   
+                    </ul>
                 </div>
                 <div class="footer-address">
                     <p class="subtitle">Національний офіс у Львові:</p>
@@ -441,14 +528,14 @@
                         <li>вул. Озаркевича, 4,</li>
                         <li>79016 Львів</li>
                         <li>secretary[at]caritas.ua</li>
-                    </ul>                   
+                    </ul>
                 </div>
                 <div class="subscribe">
                     <p>youremail@gmail.com</p>
                     <a href="#" class="btn">Підписатися</a>
                 </div>
             </div>
-        
+
         </div>
     </footer>
 

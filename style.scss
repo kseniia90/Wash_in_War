@@ -803,6 +803,25 @@ input[type="number"] {
             height: auto;
             object-fit: cover;
         }
+
+        // .region {
+        //     position: relative;
+        // }
+
+        #kherson_1,
+        #kherson_2,
+        #mykolaiv_1 {
+            position: relative;
+            z-index: 2;
+            cursor: pointer;
+            transition: all .3s ease;
+        }
+        #kherson_1:hover,
+        #kherson_2:hover,
+        #mykolaiv_1:hover {
+            border: 5px solid #B53A3A80;
+
+        }
     }
 }
 
@@ -1263,7 +1282,6 @@ input[type="number"] {
     .map_popup-dialog {
         justify-content: flex-end;
         margin: 0 0 0 auto;
-        max-height: calc(100vh - 70px);
     }
    
     .map_popup-body {
@@ -1579,6 +1597,20 @@ input[type="number"] {
         & svg path {
             stroke:#fff;
         }
+    }
+
+    .popup.map_popup  {
+
+        padding: 20px;
+    
+        .map_popup-dialog {
+            justify-content: center;
+            margin: 0 auto;
+        }
+       
+        .map_popup-body {
+            max-width: 700px; 
+        }  
     }
 }
 
@@ -1932,6 +1964,35 @@ input[type="number"] {
         width: 24px;
         height: 24px;
         padding: 6px;
+    }
+
+    .popup.map_popup  {
+    
+        .map_popup-body {
+    
+            .item {
+                padding: 16px;
+                
+                .subtitle {
+                    font-size: 18px;
+                    line-height: 24px;
+                    margin-bottom: 20px;
+                }
+    
+                .title {
+                    font-size: 24px;
+                    line-height: 28px;
+                    margin-bottom: 20px;
+                }
+    
+                .desc {
+                    font-size: 16px;
+                    line-height: 22px;
+                    max-height: none;
+                    overflow-y: unset;
+                }
+            }
+        }  
     }
 
     .swiper-button-next,

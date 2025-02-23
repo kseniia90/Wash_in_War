@@ -179,7 +179,6 @@ document.querySelectorAll('#popup .close-btn, #overlay').forEach((el) => el.addE
 new WOW().init();
 
 //  story popup
-
 document.querySelectorAll('.open-story').forEach(function(openBtn) {
   openBtn.addEventListener('click', openStoryPopup)
 })
@@ -196,38 +195,16 @@ function openStoryPopup(event){
 
     window.addEventListener("click", function (e) {
     
-      if (e.target.closest(".story_popup .close_popup")) {
+      if (e.target.closest(".close_popup")) {
         e.preventDefault();
         popup.classList.remove("active");
         document.body.style.overflow = "auto";
-      }
+      } 
     });
   }
 }
 
 //  map popup
-
 document.querySelectorAll('.open-map-popup').forEach(function(openBtn) {
   openBtn.addEventListener('click', openStoryPopup)
 })
-
-function openStoryPopup(event){
-  
-  let popupId = event.currentTarget.getAttribute("data-popup");   
-  let popup = document.getElementById(popupId);
-
-  if (popup !== null) {
-    
-    document.body.style.overflow = "hidden";
-    popup.classList.add("active");
-
-    window.addEventListener("click", function (e) {
-    
-      if (e.target.closest(".map_popup .close_popup")) {
-        e.preventDefault();
-        popup.classList.remove("active");
-        document.body.style.overflow = "auto";
-      }
-    });
-  }
-}

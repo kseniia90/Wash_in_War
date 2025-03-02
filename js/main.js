@@ -131,10 +131,10 @@ new Swiper('.slider-gallery', {
       slidesPerView: "auto",
       loop: true,
       coverflowEffect: {
-        rotate: 50,
-        stretch: 0,
-        depth: 100,
-        modifier: 1,
+        rotate: 0,
+        stretch: -5,
+        // depth: 100,
+        modifier: 8,
         slideShadows: true,
       },
       navigation: {
@@ -205,6 +205,7 @@ function openStoryPopup(event){
 }
 
 //  map popup
-document.querySelectorAll('.open-map-popup').forEach(function(openBtn) {
+// document.querySelectorAll('.open-map-popup').forEach(function(openBtn) {
+document.querySelectorAll('[data-popup]').forEach(function(openBtn) {
   openBtn.addEventListener('click', openStoryPopup)
 })

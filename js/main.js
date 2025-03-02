@@ -111,17 +111,14 @@ new Swiper('.slider-gallery', {
     },
 });
 
-new Swiper(".slider-story", {
-    freeMode: true,
-    loop: true,
-    slidesPerView: "auto",
-    centeredSlides: true,
-    spaceBetween: 15,
-    navigation: {
-        nextEl: ".slider-story .swiper-button-next",
-        prevEl: ".slider-story .swiper-button-prev",
-    },
-});
+// new Swiper(".slider-story", {
+//     slidesPerView: 1,
+//     spaceBetween: 15,
+//     navigation: {
+//         nextEl: ".slider-story .swiper-button-next",
+//         prevEl: ".slider-story .swiper-button-prev",
+//     },
+// });
 
 
 // const overlay = document.getElementById('overlay');

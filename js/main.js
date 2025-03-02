@@ -57,30 +57,13 @@ function fadeOut(el, display = 'block') {
 }
 
 // tab on home-page START
-document.querySelectorAll('.col1 .tablinks').forEach((el) => {
-    el.addEventListener('click', (event) => {
-        event.preventDefault();
-        event.target.closest('.tabs').querySelectorAll('.tab-content').forEach((el) => {
-            el.classList.remove('active');
-        });
-        document.querySelectorAll('.col1 .tablinks').forEach((el) => {
-            el.classList.remove('active');
-        });
-        event.target.classList.add('active');
-        const activeTabContent = document.getElementById(event.target.getAttribute('href').substring(1));
-        activeTabContent.classList.add('active');
-        fadeIn(activeTabContent);
-    });
-});
-
-// tab2 on home-page START
-// document.querySelectorAll('.col2 .tablinks').forEach((el) => {
+// document.querySelectorAll('.col1 .tablinks').forEach((el) => {
 //     el.addEventListener('click', (event) => {
 //         event.preventDefault();
 //         event.target.closest('.tabs').querySelectorAll('.tab-content').forEach((el) => {
 //             el.classList.remove('active');
 //         });
-//         document.querySelectorAll('.col2 .tablinks').forEach((el) => {
+//         document.querySelectorAll('.col1 .tablinks').forEach((el) => {
 //             el.classList.remove('active');
 //         });
 //         event.target.classList.add('active');
@@ -89,6 +72,23 @@ document.querySelectorAll('.col1 .tablinks').forEach((el) => {
 //         fadeIn(activeTabContent);
 //     });
 // });
+
+// tab2 on home-page START
+document.querySelectorAll('.col2 .tablinks').forEach((el) => {
+    el.addEventListener('click', (event) => {
+        event.preventDefault();
+        event.target.closest('.tabs').querySelectorAll('.tab-content').forEach((el) => {
+            el.classList.remove('active');
+        });
+        document.querySelectorAll('.col2 .tablinks').forEach((el) => {
+            el.classList.remove('active');
+        });
+        event.target.classList.add('active');
+        const activeTabContent = document.getElementById(event.target.getAttribute('href').substring(1));
+        activeTabContent.classList.add('active');
+        fadeIn(activeTabContent);
+    });
+});
 // tab on home-page END
 
 // sliders 

@@ -1,0 +1,10 @@
+- deploy to non uavoice domain
+
+-  adjust animation
+
+- check/update pay info from doc
+
+https://www.privat24.ua/rd/send_qr/liqpay_static_qr/qr_3a620855ee8d4cb892e46f048fb28e44
+
+https://docs.google.com/document/d/1D9ku4QzdCZiuCoig8R3-unwhz7EQE5rWOLtxD-vH8xE/edit?usp=drivesdk
+

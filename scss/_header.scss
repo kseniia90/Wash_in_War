@@ -1,7 +1,7 @@
 /* ---- header ---- */
 .main-header {
   position: relative;
-  z-index: 10;
+  z-index: 11;
   margin-bottom: 50px;
 
   > .container {
@@ -31,6 +31,12 @@
     background: transparent;
     border: 1px solid #ffffff;
     font-weight: 500;
+
+    &:hover {
+      background-color: #fff;
+      color: var(--accent);
+      text-decoration: none;
+    }
   }
 }
 
@@ -92,7 +98,7 @@
   .main-header .site-logo {
     // flex-basis: calc(100% - 200px);
     position: relative;
-    z-index: 10;
+    z-index: 11;
   }
 
   .menu-open .main-header {
@@ -133,7 +139,7 @@
   }
 
   .mobile-menu-toggle {
-    margin-left: -20px;
+    margin-left: -10px;
     mask: var(--menu-icon) no-repeat center right;
     width: 40px;
     height: 40px;
@@ -157,57 +163,58 @@
 .lang-switcher {
   cursor: pointer;
   position: relative;
-}
 
-.lang-switcher .lang-dropdown {
-  display: none;
-  position: absolute;
-  top: 100%;
-  right: 0;
-  margin-top: 10px;
-  padding: 10px 15px;
-  border-radius: 0 10px 10px 10px;
-  font-weight: 500;
-  font-size: 16px;
-  text-align: center;
-  white-space: nowrap;
-  flex-direction: column;
-  gap: 10px;
-  width: max-content;
-  list-style: none;
-}
+  .lang-dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    margin-top: 10px;
+    background: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    white-space: nowrap;
+    flex-direction: column;
+    gap: 10px;
+    //width: max-content;
+    width: 100%;
+    list-style: none;
 
-.lang-switcher .lang-dropdown.show {
-  display: flex;
-}
+    &.show {
+      display: flex;
+    }
 
-.lang-switcher .lang-dropdown li a {
-  color: #fff;
-  display: flex;
-  align-items: center;
-  gap: 5px;
-}
+    li a {
+      color: var(--accent);
+      text-decoration: none;
+      text-align: center;
+      line-height: 34px;
+    }
+  }
 
-.lang-switcher .current {
-  width: 54px;
-  height: 54px;
-  font-weight: 500;
-  font-size: 16px;
-  display: flex;
-  align-items: center;
-  color: var(--text-color);
-  gap: 5px;
-  border-radius: 50%;
-  padding: 15px;
-  border: 1px solid #ffffff;
-  transition: all .2s ease;
-}
+  .current {
+    width: 54px;
+    height: 54px;
+    font-weight: 500;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-color);
+    border-radius: 50%;
+    border: 1px solid #ffffff;
+    transition: all .2s ease;
+    line-height: 1;
 
-.lang-switcher .current:hover,
-.support-btn .btn:hover {
-  background-color: #fff;
-  color: var(--accent);
-  text-decoration: none;
+    &:hover {
+      background-color: #fff;
+      color: var(--accent);
+      text-decoration: none;
+    }
+  }
 }
 
 .main-header,

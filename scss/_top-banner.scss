@@ -19,10 +19,10 @@
     display: block;
     width: 36px;
     height: 36px;
-    background: url('data:image/svg+xml,<svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="36" height="36" rx="18" fill="white" fill-opacity="0.07"/><path d="M27 14.5L17.9583 23.5L9 14.5" stroke="white" stroke-width="2.25"/></svg>') var(--accent-dark);
+    background-image: url('data:image/svg+xml,<svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="36" height="36" rx="18" fill="white" fill-opacity="0.07"/><path d="M27 14.5L17.9583 23.5L9 14.5" stroke="white" stroke-width="2.25"/></svg>');
     background-repeat: no-repeat;
     background-size: cover;
-  }
+}
 
   &::before,
   &::after {
@@ -124,6 +124,16 @@
     .desc {
       font-size: 18px;
       line-height: 25.2px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .top-banner {
+    .go-down {
+      background-image: url('data:image/svg+xml,<svg width="43" height="23" viewBox="0 0 43 23" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.5 1L21.5 22L42.5 1" stroke="white"/></svg>');
+      width: 43px;
+      height: 23px;
     }
   }
 }

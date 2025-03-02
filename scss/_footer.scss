@@ -100,3 +100,57 @@
   }
 
 }
+
+@media screen and (max-width: 767px) {
+  /* ------main-footer------*/
+
+  .main-footer {
+    padding: 40px 0;
+    font-size: 16px;
+    margin-top: 30px;
+
+    .footer-cols {
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: column;
+      gap: 20px;
+
+      .col {
+        .subtitle {
+          font-size: 16px;
+          line-height: 22px;
+        }
+
+        ul {
+          font-size: 16px;
+          line-height: 22px;
+        }
+      }
+
+      .col-1 {
+
+        .site-logo {
+          flex-direction: row;
+          gap: 20px;
+        }
+      }
+
+      .col-2 {
+        column-gap: 20px;
+
+        .subscribe {
+          gap: 10px;
+
+          > p {
+            padding: 15px 5px 15px 20px;
+            font-size: 16px;
+          }
+
+          .btn {
+            padding: 14px 20px;
+          }
+        }
+      }
+    }
+  }
+}

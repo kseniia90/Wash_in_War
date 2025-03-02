@@ -56,8 +56,7 @@ a {
 abbr[title] {
   border-bottom: none; /* 1 */
   text-decoration: underline; /* 2 */
-  -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted; /* 2 */
+  text-decoration: underline dotted; /* 2 */
 }
 
 /* Add the correct font weight in Chrome, Edge, and Safari. */
@@ -149,8 +148,7 @@ button,
 [type=reset],
 [type=submit] {
   -webkit-appearance: button;
-  -moz-appearance: button;
-       appearance: button;
+  appearance: button;
 }
 
 /* Remove the inner border and padding in Firefox. */
@@ -222,8 +220,7 @@ textarea {
    */
 [type=search] {
   -webkit-appearance: textfield; /* 1 */
-  -moz-appearance: textfield;
-       appearance: textfield;
+  appearance: textfield;
   outline-offset: -2px; /* 2 */
 }
 
@@ -294,34 +291,6 @@ ul {
 }
 
 @font-face {
-  font-family: "TTNorms Light";
-  src: url(./fonts/TTNorms-Light.woff2);
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "TTNorms Regular";
-  src: url(./fonts/TTNorms-Regular.woff2);
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "TTNorms Medium";
-  src: url(./fonts/TTNorms-Medium.woff2);
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "TTNorms Bold";
-  src: url(./fonts/TTNorms-Bold.woff2);
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
   font-family: "Manrope";
   font-style: normal;
   font-weight: 400;
@@ -355,7 +324,6 @@ ul {
   --text-color: var(--dark);
   --background-color: #EEF1F7;
   --accent-dark: #081226;
-  --title-font-family: "Manrope", sans-serif;
   --menu-icon: url('data:image/svg+xml,<svg width="24" height="17" viewBox="0 0 24 17" fill="none" xmlns="http://www.w3.org/2000/svg"><rect y="0.5" width="24" height="2" rx="1" fill="%23121212"/><rect x="6" y="7.5" width="18" height="2" rx="1" fill="%23121212"/><rect x="12" y="14.5" width="12" height="2" rx="1" fill="%23121212"/></svg>');
   --menu-close-icon: url('data:image/svg+xml,<svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 14.5L8 7.5M15 0.5L8 7.5M8 7.5L1 0.5M8 7.5L15 14.5" stroke="white"/></svg>');
 }
@@ -398,7 +366,6 @@ h1 {
   margin-bottom: 0.5rem;
   font-weight: 700;
   line-height: 1.5;
-  font-family: var(--title-font-family);
   color: var(--text-color);
 }
 
@@ -575,8 +542,7 @@ input[type=email],
 input[type=tel],
 input[type=number] {
   -webkit-appearance: none;
-  -moz-appearance: none;
-       appearance: none;
+  appearance: none;
   border-radius: 0;
 }
 
@@ -693,8 +659,7 @@ input[type=number] {
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
-  -moz-column-gap: 30px;
-       column-gap: 30px;
+  column-gap: 30px;
 }
 .main-header .site-logo {
   padding: 24px 0;
@@ -711,6 +676,7 @@ input[type=number] {
   border-radius: 40px;
   background: transparent;
   border: 1px solid #ffffff;
+  font-weight: 500;
 }
 
 /* ---- menu ---- */
@@ -795,17 +761,14 @@ input[type=number] {
   }
   .mobile-menu-toggle {
     margin-left: -20px;
-    -webkit-mask: var(--menu-icon) no-repeat center right;
-            mask: var(--menu-icon) no-repeat center right;
+    mask: var(--menu-icon) no-repeat center right;
     width: 40px;
     height: 40px;
     background-color: var(--text-color);
   }
   .menu-open .mobile-menu-toggle {
-    -webkit-mask-image: var(--menu-close-icon);
-            mask-image: var(--menu-close-icon);
-    -webkit-mask-size: 24px;
-            mask-size: 24px;
+    mask-image: var(--menu-close-icon);
+    mask-size: 24px;
   }
   .main-menu-wrapper > ul {
     text-align: right;
@@ -833,7 +796,6 @@ input[type=number] {
   white-space: nowrap;
   flex-direction: column;
   gap: 10px;
-  width: -moz-max-content;
   width: max-content;
   list-style: none;
 }
@@ -892,7 +854,6 @@ input[type=number] {
   margin-left: -4px;
 }
 
-/* -- homepage --- */
 .top-banner {
   height: 100vh;
   display: flex;
@@ -902,13 +863,11 @@ input[type=number] {
   margin-top: -148px;
   padding-top: 148px;
   overflow: hidden;
-  background-size: cover;
-  background-position: top center;
 }
-.top-banner::before {
+.top-banner .go-down {
   content: "";
   position: absolute;
-  z-index: 20;
+  z-index: 10;
   bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
@@ -919,33 +878,50 @@ input[type=number] {
   background-repeat: no-repeat;
   background-size: cover;
 }
-.top-banner::after {
+.top-banner::before, .top-banner::after {
   content: "";
   display: block;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(8, 18, 38, 0) 29.88%, rgba(8, 18, 38, 0.334) 43.36%, #081226 100%);
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
 }
+.top-banner::before {
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 2;
+}
+.top-banner::after {
+  background: linear-gradient(180deg, rgba(8, 18, 38, 0) 30.37%, rgba(8, 18, 38, 0.334) 48.82%, #081226 97.28%);
+  z-index: 3;
+}
 .top-banner .banner-title {
-  font-family: var(--title-font-family);
-  font-size: 48px;
+  font-size: 40px;
   font-weight: 600;
-  line-height: 58px;
+  line-height: 1.3;
   margin-bottom: 24px;
 }
 .top-banner .desc {
   margin: 0 auto 35px;
   max-width: 550px;
 }
+.top-banner .background {
+  position: absolute;
+  left: 0;
+  top: 0;
+  object-fit: cover;
+  object-position: top center;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: saturate(80%);
+  z-index: 1;
+}
 
 .top-banner-content {
   margin: 80px auto 210px auto;
   color: #fff;
   text-align: center;
-  z-index: 1;
+  z-index: 10;
   position: relative;
 }
 
@@ -1066,8 +1042,7 @@ input[type=number] {
 .map-img img {
   width: 100%;
   height: auto;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .map-img #kherson_1,
 .map-img #kherson_2,
@@ -1103,8 +1078,7 @@ input[type=number] {
   display: block;
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .what-we-do {
@@ -1196,8 +1170,7 @@ input[type=number] {
 .stories-content .item .col-img img {
   width: 100%;
   height: auto;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 16px;
 }
 
@@ -1206,8 +1179,7 @@ input[type=number] {
 }
 .video video {
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .quote {
@@ -1241,8 +1213,7 @@ input[type=number] {
   align-items: center;
 }
 .quote .img img {
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 
 .help {
@@ -1322,7 +1293,6 @@ input[type=number] {
   display: block;
   text-align: center;
   padding: 16px 20px;
-  font-family: var(--title-font-family);
   font-size: 20px;
   font-weight: 400;
   line-height: 27px;
@@ -1364,8 +1334,7 @@ input[type=number] {
   z-index: 150;
   opacity: 0;
   background-color: rgba(0, 0, 0, 0.2);
-  -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
   transition: opacity 200ms ease-in;
   pointer-events: none;
   margin: 0;
@@ -1382,7 +1351,6 @@ input[type=number] {
   justify-content: center;
   align-items: center;
   width: 100%;
-  max-width: -moz-fit-content;
   max-width: fit-content;
   min-width: 640px;
   min-height: 100%;
@@ -1452,8 +1420,7 @@ input[type=number] {
 .popup-body .item .col-img img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 20px 0 0 20px;
 }
 
@@ -1480,8 +1447,7 @@ input[type=number] {
 .popup.map_popup {
   padding: 35px 40px;
   background-color: transparent;
-  -webkit-backdrop-filter: unset;
-          backdrop-filter: unset;
+  backdrop-filter: unset;
 }
 .popup.map_popup .map_popup-dialog {
   justify-content: flex-end;
@@ -1582,8 +1548,7 @@ input[type=number] {
 .main-footer .footer-cols .col-2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  -moz-column-gap: 38px;
-       column-gap: 38px;
+  column-gap: 38px;
   row-gap: 60px;
 }
 .main-footer .footer-cols .col-2 .subscribe {
@@ -1781,8 +1746,7 @@ input[type=number] {
     margin-bottom: 20px;
   }
   .main-header > .container {
-    -moz-column-gap: 15px;
-         column-gap: 15px;
+    column-gap: 15px;
     padding-top: 10px;
     padding-bottom: 10px;
   }
@@ -1977,8 +1941,7 @@ input[type=number] {
     gap: 20px;
   }
   .main-footer .footer-cols .col-2 {
-    -moz-column-gap: 20px;
-         column-gap: 20px;
+    column-gap: 20px;
   }
   .main-footer .footer-cols .col-2 .subscribe {
     gap: 10px;
@@ -2040,4 +2003,6 @@ input[type=number] {
   .main-footer .footer-cols .col-2 .subscribe {
     grid-area: initial;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */

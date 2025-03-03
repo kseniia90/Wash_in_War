@@ -364,7 +364,7 @@
       font-size: 20px;
       font-weight: 400;
       line-height: 27px;
-      transition: color .3s;
+      //transition: color .3s;
       white-space: nowrap;
       position: relative;
       color: #002E50;
@@ -379,7 +379,7 @@
       }
 
       &:hover {
-        border: 1px solid var(--accent);
+        //border: 1px solid var(--accent);
       }
     }
   }

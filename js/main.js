@@ -94,7 +94,7 @@ document.querySelectorAll('.col2 .tablinks').forEach((el) => {
 // sliders 
 new Swiper('.slider-gallery', {
     effect: "coverflow",
-    grabCursor: true,
+    // grabCursor: true,
     centeredSlides: true,
     slidesPerView: "auto",
     loop: true,
@@ -131,7 +131,7 @@ new Swiper('.slider-gallery', {
 // }));
 
 // WOW animation
-new WOW().init();
+new WOW({offset: 80}).init();
 
 //  story popup
 document.querySelectorAll('.open-story').forEach(function (openBtn) {

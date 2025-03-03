@@ -22,12 +22,13 @@
     background-image: url('data:image/svg+xml,<svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="36" height="36" rx="18" fill="white" fill-opacity="0.07"/><path d="M27 14.5L17.9583 23.5L9 14.5" stroke="white" stroke-width="2.25"/></svg>');
     background-repeat: no-repeat;
     background-size: cover;
-}
+  }
 
-  &::before,
-  &::after {
-    content: '';
-    display: block;
+
+  .gradient,
+  .overlay {
+    //content: '';
+    //display: block;
     position: absolute;
     top: 0;
     left: 0;
@@ -35,12 +36,13 @@
     bottom: 0;
   }
 
-  &::before {
+  .overlay{
     background: rgba(0, 0, 0, 0.2);
+    //background: rgba(0, 0, 0, 0.8);
     z-index: 2;
   }
 
-  &::after {
+  .gradient {
     background: linear-gradient(180deg, rgba(8, 18, 38, 0) 30.37%, rgba(8, 18, 38, 0.334) 48.82%, #081226 97.28%);
     z-index: 3;
   }
@@ -72,14 +74,11 @@
 }
 
 .top-banner-content {
-  margin: 80px auto 210px auto;
+  //margin: 80px auto 210px auto;
   color: #fff;
   text-align: center;
   z-index: 10;
   position: relative;
-}
-
-.homepage .top-banner-content {
   max-width: 700px;
   margin: 140px auto 270px auto;
 }

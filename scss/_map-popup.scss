@@ -1,8 +1,12 @@
 .popup.map_popup {
-
   padding: 35px 40px;
   background-color: transparent;
   backdrop-filter: unset;
+  animation: slideOutRight .5s linear;
+
+  &.active {
+    animation-name: slideInRight;
+  }
 
   .map_popup-dialog {
     justify-content: flex-end;
@@ -35,6 +39,8 @@
 
       .col {
         padding: 0;
+        margin: 0;
+        height: auto;
       }
 
       .subtitle {

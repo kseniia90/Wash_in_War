@@ -13,7 +13,7 @@
     "build": "npm-run-all --parallel build:*",
     "bs": "browser-sync start --server --files \"*\"",
     "watch:css": "sass scss/style.scss:style.css --watch",
-    "build:css": "rimraf *.css.map && sass --no-source-map --style=compressed sass/style.scss:style.css",
-    "build:js": "concat -o main.js assets/js/frontend/*.js && terser main.js -c -m --output main.js"
+    "build:css": "rimraf *.css.map && sass --no-source-map --style=compressed scss/style.scss:style.css",
+    "build:js": "concat -o main.js lib/swiper/swiper-bundle.min.js lib/wow/wow.min.js js/*.js && terser main.js -c -m --output main.js"
   }
 }

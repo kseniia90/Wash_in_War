@@ -1,4 +1,5 @@
 - deploy to non uavoice domain
+- cleanup css
 
 https://www.privat24.ua/rd/send_qr/liqpay_static_qr/qr_3a620855ee8d4cb892e46f048fb28e44
 

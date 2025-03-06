@@ -28,6 +28,14 @@ document.querySelector('.mobile-menu-toggle').addEventListener('click', () => {
     }
 });
 
+document.querySelectorAll('.menu-item').forEach((el) => {
+    el.addEventListener('click', (event) => {
+        if (document.body.classList.contains('menu-open')) {
+            document.body.classList.remove('menu-open');
+        }
+    });
+});
+
 function fadeIn(el, display = 'block') {
     el.style.opacity = 0;
     el.style.display = display;
@@ -117,6 +125,7 @@ let swiperGallery = new Swiper('.slider-gallery', {
 
 let swiperGalleryL = new Swiper('.slider-gallery-l', {
     autoHeight: true,
+    spaceBetween: 15,
     slidesPerView: "auto",
     keyboard: {
         enabled: true,

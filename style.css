@@ -2381,30 +2381,9 @@ ul {
 @font-face {
   font-family: "Manrope";
   font-style: normal;
-  font-weight: 400;
+  font-weight: 200 800;
   font-display: swap;
-  src: url(fonts/Manrope/Manrope-Regular.woff2) format("woff2");
-}
-@font-face {
-  font-family: "Manrope";
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url(fonts/Manrope/Manrope-Medium.woff2) format("woff2");
-}
-@font-face {
-  font-family: "Manrope";
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: url(fonts/Manrope/Manrope-SemiBold.woff2) format("woff2");
-}
-@font-face {
-  font-family: "Manrope";
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url(fonts/Manrope/Manrope-Bold.woff2) format("woff2");
+  src: url(fonts/Manrope/Manrope-VariableFont.woff2) format("woff2");
 }
 :root {
   --dark: #000000;
@@ -3055,16 +3034,23 @@ input[type=number] {
   line-height: 46.8px;
 }
 .effect .item {
-  padding: 32px 28px 53px;
+  padding: 32px 28px 36px;
   border-radius: 20px;
   background: rgba(255, 255, 255, 0.07);
-}
-.effect .item .subtitle {
-  margin-bottom: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
 }
 .effect .item .desc {
   font-size: 18px;
   line-height: 25.2px;
+  margin-bottom: 10px;
+}
+.effect .item .source {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 19.6px;
+  margin-top: auto;
 }
 
 @media (max-width: 768px) {
@@ -4262,10 +4248,7 @@ input[type=number] {
     font-weight: 700;
   }
   .effect .item {
-    padding: 24px 28px 37px;
-  }
-  .effect .item .subtitle {
-    margin-bottom: 20px;
+    padding: 24px 28px 28px;
   }
   .effect .item .desc {
     font-size: 16px;

@@ -112,17 +112,28 @@
   }
 
   .item {
-    padding: 32px 28px 53px;
+    padding: 32px 28px 36px;
     border-radius: 20px;
     background: rgba(255, 255, 255, 0.07);
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
 
     .subtitle {
-      margin-bottom: 18px;
+      //margin-bottom: 18px;
     }
 
     .desc {
       font-size: 18px;
       line-height: 25.2px;
+      margin-bottom: 10px;
+    }
+
+    .source {
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 19.6px;
+      margin-top: auto;
     }
   }
 }

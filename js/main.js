@@ -92,9 +92,8 @@ document.querySelectorAll('.col2 .tablinks').forEach((el) => {
 // tab on home-page END
 
 // sliders 
-new Swiper('.slider-gallery', {
+let swiperGallery = new Swiper('.slider-gallery', {
     effect: "coverflow",
-    // grabCursor: true,
     centeredSlides: true,
     slidesPerView: "auto",
     loop: true,
@@ -109,7 +108,47 @@ new Swiper('.slider-gallery', {
         nextEl: ".slider-gallery .swiper-button-next",
         prevEl: ".slider-gallery .swiper-button-prev",
     },
+    // on: {
+    //     realIndexChange: function () {
+    //         swiperGalleryL.slideTo(this.realIndex, swiperGalleryL.speed, false);
+    //     }
+    // }
 });
+
+let swiperGalleryL = new Swiper('.slider-gallery-l', {
+    autoHeight: true,
+    slidesPerView: "auto",
+    keyboard: {
+        enabled: true,
+    },
+    navigation: {
+        nextEl: "#gallery-popup .swiper-button-next",
+        prevEl: "#gallery-popup .swiper-button-prev",
+    },
+    // on: {
+    //     activeIndexChange: function () {
+    //         swiperGallery.slideToLoop(this.activeIndex, swiperGallery.speed, false);
+    //     }
+    // }
+});
+
+document.querySelectorAll('.slider-gallery .swiper-slide').forEach((el) => {
+    el.addEventListener('click', (event) => {
+        if (event.target.closest('.swiper-slide').classList.contains('swiper-slide-active')) {
+            //show gallery l
+            let popup = document.getElementById('gallery-popup');
+
+            if (popup !== null) {
+                document.body.style.overflow = "hidden";
+                popup.classList.add("active");
+            }
+
+            swiperGalleryL.slideTo(swiperGallery.realIndex, 0);
+        }
+    })
+});
+
+
 
 // new Swiper(".slider-story", {
 //     slidesPerView: 1,
@@ -175,3 +214,9 @@ window.addEventListener("click", (e) => {
         closePopup();
     }
 });
+
+document.onkeydown = (e) => {
+    if (e.keyCode === 27) {
+        closePopup();
+    }
+}

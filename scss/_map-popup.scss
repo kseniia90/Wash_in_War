@@ -66,6 +66,18 @@
         //max-height: 250px;
         //overflow-y: auto;
         padding-right: 0;
+
+        .btn {
+          background-color: #fff;
+          color: var(--accent);
+          border: 1px solid var(--accent);
+          margin-top: 20px;
+
+          &:hover {
+            background-color: var(--accent);
+            color: #fff;
+          }
+        }
       }
 
       .col-img img {

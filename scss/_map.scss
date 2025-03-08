@@ -59,7 +59,10 @@
     padding: 80px 0;
     width: fit-content;
     margin: 0 auto;
-    position: relative;
+
+    .wrapper {
+      position: relative;
+    }
 
     .tooltip {
       width: 34px;
@@ -134,17 +137,17 @@
       }
 
       &[data-popup="map-popup-1"] {
-        top: 71%;
+        top: 77%;
         left: 59%;
       }
 
       &[data-popup="map-popup-2"] {
-        top: 69%;
+        top: 75%;
         left: 64%;
       }
 
       &[data-popup="map-popup-3"] {
-        top: 83%;
+        top: 90%;
         left: 66.5%;
       }
 
@@ -154,65 +157,94 @@
       }
 
       &[data-popup="map-popup-5"] {
-        top: 54%;
+        top: 55%;
         left: 84.5%;
       }
 
       &[data-popup="map-popup-6"] {
-        top: 44%;
+        top: 42%;
         left: 91%;
       }
 
       &[data-popup="map-popup-7"] {
-        top: 14%;
+        top: 5%;
         left: 58.5%;
       }
 
       &[data-popup="map-popup-8"] {
-        top: 27%;
+        top: 21%;
         left: 45%;
       }
 
       &[data-popup="map-popup-9"] {
-        top: 28%;
+        top: 24%;
         left: 49%;
       }
 
       &[data-popup="map-popup-10"] {
-        top: 34%;
+        top: 29%;
         left: 78.5%;
       }
 
       &[data-popup="map-popup-11"] {
-        top: 39%;
+        top: 35%;
         left: 85%;
       }
 
       &[data-popup="map-popup-12"] {
-        top: 64%;
+        top: 70%;
         left: 55%;
       }
 
       &[data-popup="map-popup-13"] {
-        top: 63%;
+        top: 65%;
         left: 64%;
       }
 
       &[data-popup="map-popup-14"] {
-        top: 65%;
+        top: 68%;
         left: 76%;
       }
 
       &[data-popup="map-popup-15"] {
-        top: 55%;
+        top: 56%;
         left: 89%;
       }
 
       &[data-popup="map-popup-16"] {
-        top: 41%;
+        top: 39%;
         left: 95%;
       }
 
+      &[data-popup="map-popup-17"] {
+        top: 37%;
+        left: 80%;
+      }
+
+      &[data-popup="map-popup-18"] {
+        top: 48%;
+        left: 84%;
+      }
+
+      &[data-popup="map-popup-19"] {
+        top: 60%;
+        left: 74%;
+      }
+
+      &[data-popup="map-popup-20"] {
+        top: 55%;
+        left: 67%;
+      }
+
+      &[data-popup="map-popup-21"] {
+        top: 65%;
+        left: 63%;
+      }
+
+      &[data-popup="map-popup-21"] {
+        top: 66%;
+        left: 54%;
+      }
 
     }
 

@@ -2,15 +2,18 @@ const langDropdown = document.querySelector('.lang-dropdown');
 document.querySelector('.lang-switcher .current').addEventListener('click', () => {
     if (langDropdown.classList.contains('show')) {
         langDropdown.classList.remove('show');
+        document.querySelector('.lang-switcher').classList.remove('active');
         fadeOut(langDropdown, 'flex');
     } else {
         langDropdown.classList.add('show');
+        document.querySelector('.lang-switcher').classList.add('active');
         fadeIn(langDropdown, 'flex');
     }
 });
 window.addEventListener('click', (event) => {
     if (!document.querySelector('.lang-switcher').contains(event.target) && langDropdown.classList.contains('show')) {
         langDropdown.classList.remove('show');
+        document.querySelector('.lang-switcher').classList.remove('active');
         fadeOut(langDropdown, 'flex');
     }
 });

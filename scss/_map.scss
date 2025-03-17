@@ -108,6 +108,8 @@
         top: 0;
         width: 100%;
         height: 100%;
+
+        //z-index: 1;
       }
 
       &.blue {
@@ -122,17 +124,17 @@
 
       .label {
         display: none;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 95%;
+        font-size: 16px;
+        font-weight: 700;
       }
 
       &.active {
         .label {
           display: block;
-          position: absolute;
-          left: 50%;
-          transform: translateX(-50%);
-          bottom: 110%;
-          font-size: 16px;
-          font-weight: 700;
         }
       }
 
@@ -144,6 +146,7 @@
       &[data-popup="map-popup-2"] {
         top: 75%;
         left: 64%;
+        z-index: 1;
       }
 
       &[data-popup="map-popup-3"] {
@@ -164,6 +167,7 @@
       &[data-popup="map-popup-6"] {
         top: 42%;
         left: 91%;
+        z-index: 1;
       }
 
       &[data-popup="map-popup-7"] {
@@ -194,6 +198,7 @@
       &[data-popup="map-popup-12"] {
         top: 70%;
         left: 55%;
+        z-index: 1;
       }
 
       &[data-popup="map-popup-13"] {
@@ -237,11 +242,11 @@
       }
 
       &[data-popup="map-popup-21"] {
-        top: 65%;
-        left: 63%;
+        top: 70%;
+        left: 64%;
       }
 
-      &[data-popup="map-popup-21"] {
+      &[data-popup="map-popup-22"] {
         top: 66%;
         left: 54%;
       }

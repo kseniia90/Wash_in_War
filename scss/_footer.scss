@@ -82,6 +82,26 @@
       }
     }
   }
+
+  .social {
+    display: flex;
+    gap: 22px;
+    align-items: center;
+    margin-top: 35px;
+
+    a {
+      display: block;
+      transition: transform .2s;
+
+      &:hover {
+        transform: scale(1.15);
+      }
+    }
+
+    svg path {
+      fill: currentColor;
+    }
+  }
 }
 
 @media screen and (max-width: 550px) {

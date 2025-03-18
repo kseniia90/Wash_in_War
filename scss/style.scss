@@ -278,19 +278,6 @@
 @import "footer";
 
 @media screen and (max-width: 992px) {
-
-  .lang-switcher .current {
-    width: 45px;
-    height: 45px;
-    padding: 10px;
-  }
-
-  .main-header {
-    .support-us {
-      padding: 10px 20px;
-    }
-  }
-
   .results {
     padding: 40px 0;
     grid-template-columns: 1fr;
@@ -415,12 +402,6 @@
   /* ---- menu ---- */
   .main-menu-wrapper > ul a {
     font-size: 22px;
-  }
-
-  .lang-switcher .current {
-    width: 38px;
-    height: 38px;
-    padding: 7px;
   }
 
   /* -- homepage --- */

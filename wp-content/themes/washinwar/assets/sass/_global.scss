@@ -1,0 +1,331 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Manrope", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 27.32px;
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: #EEF1F7;
+}
+
+main {
+  flex-grow: 1;
+}
+
+h6,
+h5,
+h4,
+h3,
+h2,
+h1 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+  line-height: 1.5;
+  //font-family: var(--title-font-family);
+  color: var(--text-color);
+}
+
+h1 {
+  font-size: 30px;
+  line-height: 33px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 25px;
+  line-height: 27px;
+}
+
+h3 {
+  font-size: 22px;
+  line-height: 24px;
+}
+
+h4 {
+  font-size: 20px;
+  line-height: 22px;
+  margin-bottom: 15px;
+}
+
+h5 {
+  font-size: 18px;
+}
+
+h6 {
+  font-size: 16px;
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 50px;
+    line-height: 54px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  h3 {
+    font-size: 25px;
+    line-height: 27px;
+  }
+
+  h4 {
+    font-size: 22px;
+    line-height: 24px;
+  }
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+p + h1,
+p + h2,
+p + h3,
+p + h4,
+p + h5 {
+  margin-top: 20px;
+}
+
+ol,
+ul {
+  padding-left: 2rem;
+}
+
+ol,
+ul {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+ol ol,
+ul ul,
+ol ul,
+ul ol {
+  margin-bottom: 0;
+}
+
+a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+img,
+svg {
+  vertical-align: middle;
+  max-width: 100%;
+  height: auto;
+}
+
+table {
+  caption-side: bottom;
+  border-collapse: collapse;
+}
+
+th {
+  text-align: inherit;
+  text-align: -webkit-match-parent;
+}
+
+thead,
+tbody,
+tfoot,
+tr,
+td,
+th {
+  border-color: inherit;
+  border-style: solid;
+  border-width: 0;
+}
+
+label {
+  display: inline-block;
+}
+
+button {
+  border-radius: 0;
+}
+
+button:focus:not(:focus-visible) {
+  outline: 0;
+}
+
+input,
+button,
+select,
+optgroup,
+textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+select {
+  word-wrap: normal;
+}
+
+::-moz-focus-inner {
+  padding: 0;
+  border-style: none;
+}
+
+textarea {
+  resize: vertical;
+}
+
+fieldset {
+  min-width: 0;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+iframe {
+  border: 0;
+}
+
+textarea,
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"] {
+  -webkit-appearance: none;
+  appearance: none;
+  border-radius: 0;
+}
+
+.container {
+  width: 100%;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1240px;
+}
+
+.btn {
+  background-color: var(--accent);
+  display: inline-block;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 22px;
+  border-radius: 100px;
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  border: 1px solid transparent;
+  transition: all .2s ease;
+  white-space: nowrap;
+}
+
+.btn:hover {
+  background-color: #fff;
+  color: var(--accent);
+  border: 1px solid var(--accent);
+  text-decoration: none;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+}
+
+.title-light {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 52px;
+}
+
+.subtitle {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 31.2px;
+}
+
+.bg {
+  background: var(--accent-dark);
+}
+
+#map,
+#stories,
+#support-us,
+#about-project {
+  scroll-margin-top: 15px;
+}
+
+@media screen and (max-width: 992px) {
+
+  .title,
+  .title-light {
+    font-size: 32px;
+    line-height: 38px;
+  }
+
+  .subtitle {
+    font-size: 22px;
+    line-height: 28px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .desktop-only {
+    display: none !important;
+  }
+
+  .title,
+  .title-light {
+    font-size: 24px;
+    line-height: 31px;
+  }
+
+  .subtitle {
+    font-size: 20px;
+    line-height: 26px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-only {
+    display: none !important;
+  }
+}
+
+.error-center {
+  display: flex;
+  align-items: center;
+}

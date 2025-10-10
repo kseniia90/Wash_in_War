@@ -1,0 +1,67 @@
+<?php
+/**
+ * The header.
+ *
+ * This is the template that displays all of the <head> section and everything up until main.
+ *
+ * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
+ *
+ */
+
+?>
+<!doctype html>
+<html <?php language_attributes(); ?>>
+<head>
+	<meta charset="<?php bloginfo( 'charset' ); ?>" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<?php wp_head(); ?>
+</head>
+<body <?php body_class(); ?>>
+<?php wp_body_open(); ?>
+<?php /*
+<div id="page" class="site">
+	<a class="skip-link screen-reader-text" href="#content">
+		<?php
+		/* translators: Hidden accessibility text. *
+		esc_html_e( 'Skip to content', 'washinwar' );
+		?>
+	</a>
+	<?php get_template_part( 'template-parts/header/site-header' ); ?>
+	<div id="content" class="site-content">
+		<div id="primary" class="content-area">
+			<main id="main" class="site-main">
+*/ ?>
+
+<header class="main-header">
+    <div class="container">
+        <div class="site-logo">
+            <img src="<?php echo get_theme_file_uri('assets') ?>/img/logo.svg" class="desktop-only" width="237" height="48" alt="logo">
+            <img src="<?php echo get_theme_file_uri('assets') ?>/img/logo-m.svg" class="mobile-only" width="31" height="40" alt="logo">
+        </div>
+        <nav class="main-menu">
+            <div class="main-menu-wrapper">
+                <ul>
+                    <li class="menu-item"><a href="<?php echo home_url('/') ?>#about-project">Про проєкт</a></li>
+                    <li class="menu-item"><a href="<?php echo home_url('/') ?>#news">Новини</a></li>
+                    <li class="menu-item"><a href="<?php echo home_url('/') ?>#map">Мапа</a></li>
+                    <li class="menu-item"><a href="<?php echo home_url('/') ?>#stories">Історії</a></li>
+                    <li class="menu-item"><a href="<?php echo home_url('/') ?>#contact">Контакти</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="main-right">
+            <div class="lang-switcher">
+                <div class="current">UA</div>
+                <ul class="lang-dropdown">
+                    <li><a href="/en/">EN</a></li>
+                    <li><a href="/no/">NO</a></li>
+                </ul>
+            </div>
+            <div class="support-btn">
+                <a class="btn support-us" href="<?php echo home_url('/') ?>#support-us">Підтримати</a>
+            </div>
+        </div>
+        <div class="mobile-menu-toggle"></div>
+    </div>
+</header>
+<main>

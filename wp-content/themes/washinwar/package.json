@@ -1,0 +1,32 @@
+{
+  "name": "washinwar",
+  "version": "0.1.0",
+  "devDependencies": {
+    "@wordpress/browserslist-config": "^6.1.0",
+    "@wordpress/stylelint-config": "^23.3.0",
+    "autoprefixer": "^10.4.19",
+    "browser-sync": "^3.0.2",
+    "concat-cli": "^4.0.0",
+    "npm-run-all": "^4.1.5",
+    "rimraf": "^6.0.1",
+    "sass": "^1.89.0",
+    "stylelint-config-recommended-scss": "^14.0.0",
+    "terser": "^5.31.6"
+  },
+  "browserslist": [
+    "extends @wordpress/browserslist-config"
+  ],
+  "scripts": {
+    "watch": "npm-run-all --parallel bs watch:*",
+    "build": "npm-run-all --parallel build:*",
+    "lint": "npm-run-all lint:*",
+    "bs": "browser-sync start --config config/browser-sync.config.js",
+    "watch:css": "sass assets/sass/style.scss:style.css --watch",
+    "watch:css-editor": "sass assets/sass/style-editor.scss:assets/css/style-editor.css --watch",
+    "build:css": "rimraf *.css.map && sass --no-source-map --style=compressed assets/sass/style.scss:style.css",
+    "build:css-editor": "rimraf assets/css/style-editor.css.map && sass --no-source-map --style=compressed assets/sass/style-editor.scss:assets/css/style-editor.css",
+    "DISABLEDbuild:js": "concat -o main.js assets/js/frontend/*.js && terser main.js -c -m --output main.js",
+    "build:js": "concat -o main.js assets/lib/swiper/swiper-bundle.min.js assets/lib/wow/wow.min.js assets/js/frontend/*.js && terser main.js -c -m --output main.js",
+    "lint:css": "stylelint assets/sass/**/*.scss"
+  }
+}

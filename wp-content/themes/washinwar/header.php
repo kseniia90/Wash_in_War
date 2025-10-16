@@ -35,8 +35,10 @@
 <header class="main-header">
     <div class="container">
         <div class="site-logo">
-            <img src="<?php echo get_theme_file_uri('assets') ?>/img/logo.svg" class="desktop-only" width="237" height="48" alt="logo">
-            <img src="<?php echo get_theme_file_uri('assets') ?>/img/logo-m.svg" class="mobile-only" width="31" height="40" alt="logo">
+			<a href="<?php echo home_url('/') ?>">
+				<img src="<?php echo get_theme_file_uri('assets') ?>/img/logo.svg" class="desktop-only" width="237" height="48" alt="logo">
+				<img src="<?php echo get_theme_file_uri('assets') ?>/img/logo-m.svg" class="mobile-only" width="31" height="40" alt="logo">
+			</a>
         </div>
         <nav class="main-menu">
             <div class="main-menu-wrapper">

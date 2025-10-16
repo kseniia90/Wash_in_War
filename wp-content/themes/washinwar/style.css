@@ -2737,6 +2737,9 @@ input[type=number] {
   z-index: 11;
   margin-bottom: 50px;
 }
+body:not(.home) .main-header {
+  background-color: var(--accent-dark);
+}
 .main-header > .container {
   max-width: 1360px;
   display: flex;
@@ -2868,6 +2871,24 @@ input[type=number] {
   .main-menu-wrapper > ul > li {
     padding-bottom: 20px;
   }
+  /* ---- header ---- */
+  .main-header {
+    margin-bottom: 20px;
+  }
+  .main-header > .container {
+    column-gap: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .main-header .site-logo {
+    padding: 0;
+  }
+  .main-header .main-right {
+    gap: 15px;
+  }
+  .main-header .support-us {
+    padding: 8px 20px;
+  }
 }
 .lang-switcher {
   cursor: pointer;
@@ -2977,9 +2998,6 @@ input[type=number] {
   padding: 40px 48px;
   background: #ffffff;
   border-radius: 20px;
-}
-.latest-posts .item:nth-child(even) {
-  grid-template-columns: 40% 1fr;
 }
 .latest-posts .item .subtitle {
   font-weight: 600;
@@ -4417,7 +4435,6 @@ input[type=number] {
     max-height: 90px;
   }
   .quote {
-    gap: 20;
     padding: 40px 0;
   }
   .quote .left {
@@ -4460,24 +4477,6 @@ input[type=number] {
   .subtitle {
     font-size: 20px;
     line-height: 26px;
-  }
-  /* ---- header ---- */
-  .main-header {
-    margin-bottom: 20px;
-  }
-  .main-header > .container {
-    column-gap: 15px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
-  .main-header .site-logo {
-    padding: 0;
-  }
-  .main-header .main-right {
-    gap: 15px;
-  }
-  .main-header .support-us {
-    padding: 8px 20px;
   }
   /* ---- menu ---- */
   .main-menu-wrapper > ul a {

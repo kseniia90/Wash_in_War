@@ -3,11 +3,11 @@
 @import "../lib/swiper/swiper-bundle.min";
 @import "../lib/wow/animate.min";
 
-@import "normalize";
+@import "landing-styles/normalize";
 @import "settings/fonts";
-@import "variables";
-@import "global";
-@import "header";
+@import "landing-styles/variables";
+@import "landing-styles/global";
+@import "landing-styles/header";
 
 @import "posts/latest-posts";
 
@@ -37,7 +37,7 @@
   }
 }
 
-@import "top-banner";
+@import "landing-styles/top-banner";
 
 
 .title-block {
@@ -70,8 +70,8 @@
   max-width: 1100px;
 }
 
-@import "map";
-@import "slider-block";
+@import "landing-styles/map";
+@import "landing-styles/slider-block";
 
 .what-we-do {
   max-width: 1280px;
@@ -278,10 +278,10 @@
   }
 }
 
-@import "support";
-@import "popup";
-@import "map-popup";
-@import "footer";
+@import "landing-styles/support";
+@import "landing-styles/popup";
+@import "landing-styles/map-popup";
+@import "landing-styles/footer";
 
 @media screen and (max-width: 992px) {
   .results {
@@ -325,7 +325,7 @@
   }
 
   .quote {
-    gap: 20;
+    //gap: 20;
     padding: 40px 0;
 
     .left {
@@ -382,28 +382,6 @@
     line-height: 26px;
   }
 
-  /* ---- header ---- */
-  .main-header {
-    margin-bottom: 20px;
-
-    > .container {
-      column-gap: 15px;
-      padding-top: 10px;
-      padding-bottom: 10px;
-    }
-
-    .site-logo {
-      padding: 0;
-    }
-
-    .main-right {
-      gap: 15px;
-    }
-
-    .support-us {
-      padding: 8px 20px;
-    }
-  }
 
   /* ---- menu ---- */
   .main-menu-wrapper > ul a {

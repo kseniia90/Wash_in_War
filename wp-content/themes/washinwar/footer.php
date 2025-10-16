@@ -14,7 +14,9 @@
     <div class="container footer-cols">
         <div class="col col-1">
             <div class="site-logo">
-                <img src="<?php echo get_theme_file_uri('assets') ?>/img/logo.svg" width="177" height="36" alt="logo">
+				<a href="<?php echo home_url('/') ?>">
+                	<img src="<?php echo get_theme_file_uri('assets') ?>/img/logo.svg" width="177" height="36" alt="logo">
+				</a>
                 <a href="https://caritas.ua"><img src="<?php echo get_theme_file_uri('assets') ?>/img/logo-footer2.svg" width="177" height="33" alt="logo"></a>
             </div>
         </div>

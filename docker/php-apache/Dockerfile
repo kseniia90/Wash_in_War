@@ -10,7 +10,7 @@ RUN mv "$PHP_INI_DIR/php.ini-production" "$PHP_INI_DIR/php.ini"
 
 COPY ./docker/php-apache/custom-php.ini $PHP_INI_DIR/conf.d/
 
-#RUN a2enmod rewrite && service apache2 restart
+RUN a2enmod rewrite && service apache2 restart
 
 #https://github.com/docker-library/wordpress/blob/master/latest/php8.2/apache/Dockerfile
 # persistent dependencies

@@ -30,6 +30,7 @@ if ( have_posts() ) { ?>
 			</div>
 		<?php } ?>
 		</div>
+		<?php //the_posts_pagination(); ?>
 	</div>
 <?php } else {
 	// If no content, include the "No posts found" template.

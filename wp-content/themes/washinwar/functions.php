@@ -9,7 +9,7 @@ $inc_dir = 'inc';
 
 $includes = [
 //	'theme-settings.php',
-//	'setup.php',
+	'setup.php',
 //	'widgets.php',
 	'enqueue.php',
 //	'customizer.php',

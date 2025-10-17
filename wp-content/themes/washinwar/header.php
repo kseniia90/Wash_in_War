@@ -44,7 +44,14 @@
             <div class="main-menu-wrapper">
                 <ul>
                     <li class="menu-item"><a href="<?php echo home_url('/') ?>#about-project">Про проєкт</a></li>
-                    <li class="menu-item"><a href="<?php echo home_url('/') ?>#news">Новини</a></li>
+					<?php
+					if (is_front_page()) {
+						$news_url = home_url('/') . '#news';
+					} else {
+						$news_url = esc_url(get_permalink(get_option('page_for_posts')));
+					}
+					?>
+                    <li class="menu-item"><a href="<?php echo $news_url ?>">Новини</a></li>
                     <li class="menu-item"><a href="<?php echo home_url('/') ?>#map">Мапа</a></li>
                     <li class="menu-item"><a href="<?php echo home_url('/') ?>#stories">Історії</a></li>
                     <li class="menu-item"><a href="<?php echo home_url('/') ?>#contact">Контакти</a></li>

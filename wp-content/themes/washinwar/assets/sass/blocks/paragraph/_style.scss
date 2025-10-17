@@ -1,0 +1,15 @@
+p {
+	line-height: var(--wp--typography--line-height, var(--line-height-body));
+	margin-bottom: var(--paragraph-spacing);
+
+	// inherits general font style set at <body>
+	&.has-background {
+		//padding: var(--spacing-unit);
+	}
+
+	// Override `color: inherit` from Core styles.
+	&.has-text-color a {
+		color: currentcolor;
+		//color: var(--wp--style--color--link, var(--color-primary));
+	}
+}

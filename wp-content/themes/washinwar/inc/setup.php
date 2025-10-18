@@ -13,8 +13,8 @@ if ( ! function_exists( 'washinwar_setup' ) ) {
 		 *
 		 * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
 		 */
-//		add_theme_support( 'post-thumbnails' );
-//		set_post_thumbnail_size( 756, 504 );
+		add_theme_support( 'post-thumbnails' );
+		set_post_thumbnail_size( 756, 504 );
 
 //		register_nav_menus(
 //			array(
@@ -23,18 +23,18 @@ if ( ! function_exists( 'washinwar_setup' ) ) {
 //			)
 //		);
 
-//		add_theme_support(
-//			'html5',
-//			array(
-//				'comment-form',
-//				'comment-list',
-//				'gallery',
-//				'caption',
-//				'style',
-//				'script',
-//				'navigation-widgets',
-//			)
-//		);
+		add_theme_support(
+			'html5',
+			array(
+				'comment-form',
+				'comment-list',
+				'gallery',
+				'caption',
+				'style',
+				'script',
+				'navigation-widgets',
+			)
+		);
 
 //		add_theme_support(
 //			'custom-logo',

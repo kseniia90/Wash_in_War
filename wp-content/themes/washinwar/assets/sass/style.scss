@@ -1,13 +1,28 @@
 @import "settings/file-header";
 
-@import "generic/reset";
-@import "generic/vertical-margins";
-
-@import "landing-styles";
-
 @import "settings/fonts";
 @import "settings/variables";
 
+@import "tools/functions";
+@import "tools/mixins";
+
+@import "generic/reset";
+@import "generic/breakpoints";
+@import "generic/vertical-margins";
+
+@import "tools/extends";
+
+@import "landing-styles";
+
 @import "blocks/blocks";
 
+@import "components/load-more";
+@import "components/post-item";
+@import "components/posts-grid";
+
 @import "posts/latest-posts";
+
+
+.type-post .entry-content p {
+	text-align: justify;
+}

@@ -14,7 +14,7 @@
 get_header(); ?>
 
 <div class="container">
-<?php
+<?php /*
 if ( have_posts() ) { ?>
 	<div class="latest-posts">
 		<h1 class="title"><?php single_post_title(); ?></h1>
@@ -35,6 +35,29 @@ if ( have_posts() ) { ?>
 <?php } else {
 	// If no content, include the "No posts found" template.
 	get_template_part( 'template-parts/content/content-none' );
-} ?>
+} */ ?>
+
+
+	<?php if ( have_posts() ) : ?>
+		<div class="posts-grid" id="load-more-content">
+			<?php while ( have_posts() ) : ?>
+				<?php the_post(); ?>
+				<?php get_template_part( 'template-parts/block/post-item' ); ?>
+			<?php endwhile; ?>
+		</div>
+		<?php if ($GLOBALS['wp_query']->max_num_pages > 1 && $GLOBALS['wp_query']->max_num_pages > get_query_var( 'paged' )): ?>
+			<div class="load-more-container">
+				<div id="load-more" class="wp-block-button is-style-secondary-button">
+					<span class="btn"><?php esc_html_e('Більше новин', 'washinwar'); ?></span>
+				</div>
+			</div>
+		<?php endif; ?>
+		<?php
+		// leave it for seo
+		the_posts_pagination();
+		?>
+	<?php else : ?>
+		<?php get_template_part( 'template-parts/content/content-none' ); ?>
+	<?php endif; ?>
 </div>
 <?php get_footer();

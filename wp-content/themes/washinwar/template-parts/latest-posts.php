@@ -10,16 +10,22 @@ $latest_posts_query = new WP_Query( array(
 if ( $latest_posts_query->have_posts() ) : ?>
 	<div class="latest-posts">
 		<h2 class="title">Новини</h2>
-		<div class="items">
-			<?php while ( $latest_posts_query->have_posts() ) : $latest_posts_query->the_post(); ?>
-				<div class="item">
-					<div class="col">
-						<p class="subtitle"><?php the_title(); ?></p>
-						<p class="desc"><?php echo get_the_excerpt(); ?></p>
-						<a href="<?php the_permalink(); ?>" class="btn">Читати більше</a>
-					</div>
-				</div>
+		<div class="posts-grid">
+			<?php while ( $latest_posts_query->have_posts() ) : ?>
+				<?php $latest_posts_query->the_post(); ?>
+				<?php get_template_part( 'template-parts/block/post-item' ); ?>
 			<?php endwhile; ?>
+		</div>
+		<div class="items">
+<!--			--><?php //while ( $latest_posts_query->have_posts() ) : $latest_posts_query->the_post(); ?>
+<!--				<div class="item">-->
+<!--					<div class="col">-->
+<!--						<p class="subtitle">--><?php //the_title(); ?><!--</p>-->
+<!--						<p class="desc">--><?php //echo get_the_excerpt(); ?><!--</p>-->
+<!--						<a href="--><?php //the_permalink(); ?><!--" class="btn">Читати більше</a>-->
+<!--					</div>-->
+<!--				</div>-->
+<!--			--><?php //endwhile; ?>
 		</div>
 		<a href="<?php echo esc_url(get_permalink(get_option('page_for_posts'))); ?>" class="btn more-news">Всі новини</a>
 	</div>

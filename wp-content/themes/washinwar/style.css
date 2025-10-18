@@ -4,10 +4,32 @@ Author: poohdima@gmail.com
 Description:
 Tested up to: 6.8
 Requires PHP: 8.1
-Version: 0.1
+Version: 0.2
 License URI: https://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 Text Domain: washinwar
 */
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 200 800;
+  font-display: swap;
+  src: url(assets/fonts/Manrope/Manrope-VariableFont.woff2) format("woff2");
+}
+:root {
+  /* Font Size */
+  --font-size-base: 1rem;
+  /* Line Height */
+  --line-height-body: 1.3;
+  --paragraph-spacing: .8rem;
+  /* Headings */
+  /* Colors */
+  --color-background: #EEF1F7;
+  /* Spacing */
+  --spacing-vertical: 2rem;
+  /* Buttons */
+  /* Admin-bar height */
+}
+
 /**
  * Reset specific elements to make them easier to style in other contexts.
  */
@@ -76,6 +98,26 @@ textarea {
   max-width: 100%;
 }
 
+/**
+ * Responsive Styles
+ */
+/**
+ * Extends
+ */
+.container {
+  max-width: min(var(--wp--style--global--content-size), 100vw - 2 * var(--edge-indent));
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*rtl:ignore*/
+/*rtl:ignore*/
+/*rtl:ignore*/
+/*rtl:ignore*/
+/*rtl:ignore*/
+/*rtl:ignore*/
+/*rtl:ignore*/
+/*rtl:ignore*/
 /* stylelint-disable */
 /**
  * Site Structure
@@ -128,6 +170,14 @@ textarea {
 .entry-content > * {
   /* Reset alignleft and alignright margins after alignfull */
 }
+.block-post-item .wp-block-heading a {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 /**
  * Swiper 11.1.3
  * Most modern mobile touch slider and framework with hardware accelerated transitions
@@ -4588,28 +4638,6 @@ body:not(.home) .main-header {
     line-height: 22px;
   }
 }
-@font-face {
-  font-family: "Manrope";
-  font-style: normal;
-  font-weight: 200 800;
-  font-display: swap;
-  src: url(assets/fonts/Manrope/Manrope-VariableFont.woff2) format("woff2");
-}
-:root {
-  /* Font Size */
-  --font-size-base: 1rem;
-  /* Line Height */
-  --line-height-body: 1.3;
-  --paragraph-spacing: .8rem;
-  /* Headings */
-  /* Colors */
-  --color-background: #EEF1F7;
-  /* Spacing */
-  --spacing-vertical: 2rem;
-  /* Buttons */
-  /* Admin-bar height */
-}
-
 p {
   line-height: var(--wp--typography--line-height, var(--line-height-body));
   margin-bottom: var(--paragraph-spacing);
@@ -4618,6 +4646,84 @@ p.has-text-color a {
   color: currentcolor;
 }
 
+.load-more-container {
+  text-align: center;
+  margin: 45px 0;
+}
+.load-more-container + .pagination {
+  display: none;
+}
+
+#load-more {
+  display: inline-block;
+}
+#load-more.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.block-post-item {
+  padding: 15px;
+  background: #fff;
+  border-radius: 20px;
+}
+.block-post-item > * {
+  margin-block-start: 0;
+}
+.block-post-item .wp-block-image {
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 12px;
+  aspect-ratio: 1.5;
+  background-color: var(--accent-dark);
+}
+.block-post-item .wp-block-image img {
+  object-fit: cover;
+  object-position: center;
+  height: 100%;
+  width: 100%;
+  transition: transform 0.2s;
+}
+@media only screen and (min-width: 992px) {
+  .block-post-item .wp-block-image img:hover {
+    transform: scale(1.2);
+  }
+}
+.block-post-item .wp-block-image a {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+.block-post-item .wp-block-heading {
+  margin-bottom: 8px;
+}
+@media only screen and (min-width: 992px) {
+  .block-post-item .wp-block-heading {
+    font-size: 1.75rem;
+  }
+}
+.block-post-item .wp-block-post-excerpt {
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+.block-post-item .wp-block-post-excerpt p:last-child {
+  margin-bottom: 0;
+}
+.posts-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+}
+@media only screen and (min-width: 576px) {
+  .posts-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media only screen and (min-width: 992px) {
+  .posts-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
 .latest-posts {
   padding: 60px 0 80px;
 }
@@ -4710,6 +4816,9 @@ p.has-text-color a {
     -webkit-line-clamp: 4;
     max-height: 90px;
   }
+}
+.type-post .entry-content p {
+  text-align: justify;
 }
 
 /*# sourceMappingURL=style.css.map */

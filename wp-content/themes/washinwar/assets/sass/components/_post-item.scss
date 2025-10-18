@@ -1,0 +1,100 @@
+// about us page team item, case page person item, posts on all posts page
+// similar to blocks post-template
+.block-post-item {
+	padding: 15px;
+	background: #fff;
+	border-radius: 20px;
+
+	> * {
+		margin-block-start: 0;
+	}
+
+	> *:not(.wp-block-image) {
+		//padding: 0 4px;
+
+		@include media(laptop) {
+			//padding: 0 12px;
+		}
+	}
+
+	.wp-block-image {
+		border-radius: 10px;
+		overflow: hidden;
+		margin-bottom: 12px;
+		aspect-ratio: 1.5;
+		//background-color: var(--wp--preset--color--medium-grey);
+		background-color: var(--accent-dark);
+
+		img {
+			object-fit: cover;
+			object-position: center;
+			height: 100%;
+			width: 100%;
+			transition: transform .2s;
+
+			&:hover {
+				@include media(laptop) {
+					transform: scale(1.2);
+				}
+			}
+		}
+
+		a {
+			display: block;
+			height: 100%;
+			width: 100%;
+		}
+	}
+
+	.wp-block-heading {
+		margin-bottom: 8px;
+
+		a {
+			@extend %post-item-heading-clamp;
+		}
+
+		@include media(laptop) {
+			font-size: to_rem(28);
+		}
+	}
+
+	.wp-block-post-excerpt {
+		margin-top: 0;
+		margin-bottom: 8px;
+
+		p:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	> .btn {
+		//margin-top: auto;
+	}
+
+	//.wp-block-post-date {
+	//  font-weight: 200;
+	//  font-size: to_rem(12);
+	//}
+
+	// album layout on 1200-576 - case single persecuted section, about us team
+	.related-persecuted &,
+	&.album-mobile {
+		//@include media(mobile) {
+		//	@include media(up-to-desktop) {
+		//		@include block-post-item-album-layout;
+		//	}
+		//}
+	}
+
+
+	.blog &,
+	.post-type-archive-case &,
+	.post-type-archive-persecutor & {
+		// album layout on 768-576 - all cases, all news, persecutors
+		//@include media(mobile) {
+		//	@include media(up-to-tablet) {
+		//		@include block-post-item-album-layout;
+		//	}
+		//}
+	}
+}

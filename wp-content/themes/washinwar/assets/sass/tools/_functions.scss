@@ -1,0 +1,20 @@
+@use "sass:meta";
+@use "sass:math";
+
+// Remove the unit of a length
+// @param {Number} $number - Number to remove unit from
+// @return {Number} - Unitless number
+@function strip-unit($number) {
+	@if meta.type-of($number) == "number" and not math.is-unitless($number) {
+		@return $number / ($number * 0 + 1);
+	}
+
+	@return $number;
+}
+
+//@function stripUnit($value) {
+//  @return $value / ($value * 0 + 1);
+//}
+@function to_rem($pxValue) {
+	@return #{calc(strip-unit($pxValue) / 16)}rem;
+}

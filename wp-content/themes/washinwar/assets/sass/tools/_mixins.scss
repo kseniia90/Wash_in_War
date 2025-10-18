@@ -1,0 +1,109 @@
+@mixin media-up-to( $breakpoint ) {
+  @media only screen and (max-width: #{$breakpoint - 1}) {
+    @content;
+  }
+}
+
+@mixin media-from( $breakpoint ) {
+  @media only screen and (min-width: #{$breakpoint}) {
+    @content;
+  }
+}
+
+// Button style
+// - Applies button styles to blocks and elements that share them.
+@mixin button-style() {
+  background-color: var(--button--color-background);
+  border-radius: var(--button--border-radius);
+  color: var(--button--color-text);
+  font-family: var(--button--font-family);
+  font-size: var(--button--font-size);
+  font-weight: var(--button--font-weight);
+  line-height: var(--button--line-height);
+  //padding: calc(var(--button--padding-vertical) - 2px) calc(var(--button--padding-horizontal) - 2px);
+  padding: var(--button--padding-vertical) var(--button--padding-horizontal);
+  border: 2px solid var(--button--color-background);
+  transition: border-color 0.4s;
+  cursor: pointer;
+  //text-decoration: none;
+  text-transform: uppercase;
+
+  &:hover {
+    border-color: $color-black;
+  }
+
+  &:active {
+    color: #{$color-yellow};
+    background-color: #{$color-black};
+  }
+
+  &:not(:hover):not(:active) {
+    // Text colors
+    &:not(.has-text-color) {
+      //color: var(--button--color-text);
+
+      // Nested
+      .has-background & {
+        //				color: var(--local--color-background, var(--color-primary));
+
+        &.has-background {
+          //					color: var(--color-primary);
+        }
+      }
+    }
+
+    // Background-colors
+    &:not(.has-background) {
+      //background-color: var(--button--color-background);
+
+      //			// Nested
+      //			.has-background & {
+      //				background-color: var(--local--color-primary, var(--color-primary));
+      //			}
+    }
+  }
+
+  // Hover Button color should match parent element foreground color
+  &:hover,
+  &:active {
+    //		background-color: transparent;
+    //		border-color: currentcolor;
+    //		color: inherit;
+  }
+
+  // Focus Button outline color should always match the current text color
+  &:focus {
+    //background-color: var(--button--color-background-active);
+    //		outline-offset: -6px;
+    //		outline: 2px dotted currentcolor;
+  }
+
+  // Disabled Button colors
+  //	&:disabled {
+  //		background-color: var(--color-white-50);
+  //		border-color: var(--color-white-50);
+  //		color: var(--button--color-text-active);
+  //	}
+}
+
+@mixin block-post-item-album-layout {
+	grid-column: 1 / -1;
+	display: grid;
+	grid-template-rows: auto 1fr;
+	grid-template-columns: min(50%, 333px) 1fr;
+	grid-column-gap: 16px;
+
+	.wp-block-image {
+		grid-row: 1 / 3;
+		margin-bottom: 0;
+	}
+
+	> *:not(.wp-block-image) {
+		padding: 0;
+		grid-column-start: 2;
+	}
+
+	.wp-block-post-excerpt:last-child {
+		margin-bottom: 0;
+	}
+}

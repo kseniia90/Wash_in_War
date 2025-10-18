@@ -1,0 +1,181 @@
+/**
+ * Responsive Styles
+ */
+
+$max_content_width: 1280px;
+//$breakpoint_xs: 360px;
+$breakpoint_sm: 576px; // mobile
+$breakpoint_md: 768px; // tablet
+$breakpoint_lg: 992px; // laptop
+$breakpoint_xl: 1200px; // desktop
+$breakpoint_xxl: 1440px; // desktop-l
+
+// Responsive breakpoints mixin
+@mixin media( $res ) {
+	@if up-to-mobile == $res {
+		@include media-up-to($breakpoint_sm) {
+			@content;
+		}
+	} @else if mobile == $res {
+		@include media-from($breakpoint_sm) {
+			@content;
+		}
+	} @else if up-to-tablet == $res {
+		@include media-up-to($breakpoint_md) {
+			@content;
+		}
+	} @else if tablet == $res {
+		@include media-from($breakpoint_md) {
+			@content;
+		}
+	} @else if up-to-laptop == $res {
+		@include media-up-to($breakpoint_lg) {
+			@content;
+		}
+	} @else if laptop == $res {
+		@include media-from($breakpoint_lg) {
+			@content;
+		}
+	} @else if up-to-desktop == $res {
+		@include media-up-to($breakpoint_xl) {
+			@content;
+		}
+	} @else if desktop == $res {
+		@include media-from($breakpoint_xl) {
+			@content;
+		}
+	} @else if desktop-l == $res {
+		@include media-from($breakpoint_xxl) {
+			@content;
+		}
+	} @else if up-to-desktop-l == $res {
+		@include media-up-to($breakpoint_xxl) {
+			@content;
+		}
+	} @else {
+		@error "Unknown breakpoint";
+	}
+}
+
+/**
+ * Extends
+ */
+%responsive-aligndefault-width {
+	//max-width: var(--responsive--aligndefault-width);
+	//margin-left: auto;
+	//margin-right: auto;
+
+	//max-width: calc(var(--wp--style--global--content-size) + 2 * var(--edge-indent));
+	max-width: min(var(--wp--style--global--content-size), calc(100vw - 2 * var(--edge-indent)));
+	//padding-left: var(--edge-indent);
+	//padding-right: var(--edge-indent);
+	margin-left: auto;
+	margin-right: auto;
+}
+
+%responsive-alignwide-width {
+	//max-width: var(--responsive--alignwide-width);
+	max-width: var(--wp--style--global--wide-size);
+	margin-left: auto;
+	margin-right: auto;
+
+	//padding-left: 0;
+	//padding-right: 0;
+}
+
+//%responsive-alignfull-width-mobile {
+	//max-width: var(--responsive--alignfull-width);
+	//width: var(--responsive--alignfull-width);
+	//margin-left: auto;
+	//margin-right: auto;
+//}
+
+//@include media(mobile) {
+//	%responsive-alignfull-width {
+		//max-width: var(--responsive--alignfull-width);
+		//width: auto;
+		//margin-left: auto;
+		//margin-right: auto;
+	//}
+//}
+
+//%responsive-alignwide-width-nested {
+	//margin-left: auto;
+	//margin-right: auto;
+	//width: var(--responsive--alignwide-width);
+	//max-width: var(--responsive--alignfull-width);
+//}
+
+//%responsive-alignfull-width-nested {
+	//margin-left: auto;
+	//margin-right: auto;
+	//width: calc(var(--responsive--alignfull-width) - calc(2 * var(--responsive--spacing-horizontal)));
+	//max-width: var(--responsive--alignfull-width);
+//}
+
+@include media(desktop) {
+	//%responsive-alignfull-width-nested {
+		//margin-left: auto;
+		//margin-right: auto;
+		//width: calc(var(--responsive--alignfull-width) - calc(4 * var(--responsive--spacing-horizontal)));
+		//max-width: var(--responsive--alignfull-width);
+	//}
+}
+
+
+//%responsive-alignleft-mobile {
+
+	/*rtl:ignore*/
+	//margin-left: 0;
+
+	/*rtl:ignore*/
+	//margin-right: var(--responsive--spacing-horizontal);
+//}
+
+//@include media(mobile) {
+//	%responsive-alignleft {
+
+		/*rtl:ignore*/
+		//margin-left: var(--responsive--alignleft-margin);
+
+		/*rtl:ignore*/
+		//margin-right: var(--spacing-horizontal);
+	//}
+//}
+
+//%responsive-alignright-mobile {
+
+	/*rtl:ignore*/
+	//margin-left: var(--responsive--spacing-horizontal);
+
+	/*rtl:ignore*/
+	//margin-right: 0;
+//}
+
+//@include media(mobile) {
+//	%responsive-alignright {
+
+		/*rtl:ignore*/
+		//margin-left: var(--spacing-horizontal);
+
+		/*rtl:ignore*/
+		//margin-right: var(--responsive--alignright-margin);
+	//}
+//}
+
+// Output
+.container {
+	@extend %responsive-aligndefault-width;
+}
+
+//.default-max-width {
+//	@extend %responsive-aligndefault-width;
+//}
+
+//.wide-max-width {
+//	@extend %responsive-alignwide-width;
+//}
+
+//.full-max-width {
+//	@extend %responsive-alignfull-width;
+//}

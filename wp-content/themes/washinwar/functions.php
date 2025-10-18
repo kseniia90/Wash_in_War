@@ -8,7 +8,7 @@
 $inc_dir = 'inc';
 
 $includes = [
-//	'theme-settings.php',
+	'theme-settings.php',
 	'setup.php',
 //	'widgets.php',
 	'enqueue.php',

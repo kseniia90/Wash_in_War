@@ -58,7 +58,7 @@ function washinwar_scripts()
 			'washinwar-main-script',
 			get_template_directory_uri() . '/main.js',
 			array(
-//				'jquery'
+				'jquery'
 			),
 			wp_get_theme()->get('Version'),
 			array(

@@ -14,7 +14,7 @@ $includes = [
 	'enqueue.php',
 //	'customizer.php',
 //	'block-editor.php',
-//	'misc.php',
+	'misc.php',
 //	'fonts-preload.php'
 ];
 

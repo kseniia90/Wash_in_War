@@ -1,0 +1,108 @@
+.language-switcher {
+	--language-switcher-size: 54px;
+	text-align: center;
+	font-size: 16px;
+	height: calc(var(--language-switcher-size));
+
+	box-sizing: content-box;
+
+	.bogo-language-switcher {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		border-radius: calc(var(--language-switcher-size) / 2);
+		background: transparent;
+		overflow: hidden;
+		transition: height .3s;
+	}
+
+	a {
+		text-decoration: none;
+	}
+
+	li {
+		display: block;
+		transition: background-color .2s ease-in-out, height .1s, padding .1s;
+		font-weight: 500;
+		width: calc(var(--language-switcher-size) - 2px);
+	}
+
+	ul.bogo-language-switcher li {
+		height: calc(var(--language-switcher-size) - 15px);
+		line-height: calc(var(--language-switcher-size) - 15px);
+
+		&.current {
+			height: calc(var(--language-switcher-size) - 2px);
+			line-height: calc(var(--language-switcher-size) - 2px);
+		}
+	}
+
+	&:not(.open) {
+		.bogo-language-switcher {
+			border: 1px solid #fff;
+		}
+
+		li:not(.current) {
+			overflow: hidden;
+			height: 0;
+			padding: 0;
+		}
+	}
+
+	&.open {
+		--text-color: var(--accent);
+
+		.bogo-language-switcher {
+			background: #fff;
+			//box-shadow: 0 10px 12px 0 #0000000D;
+		}
+
+		li {
+			width: var(--language-switcher-size);
+		}
+
+		li.current {
+			border-radius: calc(var(--language-switcher-size) / 2);
+			border: 1px solid var(--text-color);
+		}
+
+		li:last-child {
+			height: calc(var(--language-switcher-size) - 2px);
+			line-height: calc(var(--language-switcher-size) - 2px);
+		}
+	}
+
+	.bogo-language-name {
+		//inactive color
+		color: rgba(0, 46, 80, 0.25);
+	}
+
+	@include media(up-to-tablet) {
+		//display: none;
+	}
+
+	@media (max-width: 991px) {
+		--language-switcher-size: 45px;
+	}
+
+	@media (max-width: 767px) {
+		--language-switcher-size: 38px;
+	}
+}
+
+/* stylelint-disable-next-line no-descending-specificity */
+//.language-switcher-mobile .bogo-language-switcher {
+//	list-style: none;
+//	display: flex;
+//	gap: 10px;
+//
+//	/* stylelint-disable-next-line no-descending-specificity */
+//	a {
+//		text-decoration: none;
+//		font-weight: 300;
+//
+//		&.current {
+//			font-weight: 600;
+//		}
+//	}
+//}

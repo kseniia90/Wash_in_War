@@ -3045,85 +3045,6 @@ body:not(.home) .main-header {
     padding: 8px 20px;
   }
 }
-.lang-switcher {
-  cursor: pointer;
-  position: relative;
-}
-.lang-switcher .lang-dropdown {
-  display: none;
-  position: absolute;
-  top: 0;
-  right: 0;
-  background: #fff;
-  padding: 60px 10px 10px;
-  border-radius: 27px;
-  font-weight: 500;
-  font-size: 16px;
-  text-align: center;
-  white-space: nowrap;
-  flex-direction: column;
-  gap: 10px;
-  width: 100%;
-  list-style: none;
-}
-.lang-switcher .lang-dropdown.show {
-  display: flex;
-}
-.lang-switcher .lang-dropdown li a {
-  color: var(--accent);
-  text-decoration: none;
-  text-align: center;
-  line-height: 34px;
-}
-.lang-switcher .current {
-  width: 54px;
-  height: 54px;
-  font-weight: 500;
-  font-size: 16px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--text-color);
-  border-radius: 50%;
-  border: 1px solid #ffffff;
-  transition: all 0.2s ease;
-  line-height: 1;
-}
-.lang-switcher .current:hover {
-  background-color: #fff;
-  color: var(--accent);
-  text-decoration: none;
-}
-.lang-switcher.active .current {
-  border: 1px solid var(--accent);
-  background-color: #fff;
-  color: var(--accent);
-  position: relative;
-  z-index: 1;
-}
-
-@media (max-width: 991px) {
-  .lang-switcher .current {
-    width: 45px;
-    height: 45px;
-    padding: 10px;
-  }
-  .lang-switcher .lang-dropdown {
-    padding: 50px 10px 10px;
-    gap: 3px;
-  }
-}
-@media (max-width: 767px) {
-  .lang-switcher .current {
-    width: 38px;
-    height: 38px;
-    padding: 7px;
-  }
-  .lang-switcher .lang-dropdown {
-    padding: 40px 7px 7px;
-    gap: 0;
-  }
-}
 .main-header,
 .bg {
   --text-color: #fff;
@@ -4646,6 +4567,79 @@ p.has-text-color a {
   color: currentcolor;
 }
 
+.language-switcher {
+  --language-switcher-size: 54px;
+  text-align: center;
+  font-size: 16px;
+  height: calc(var(--language-switcher-size));
+  box-sizing: content-box;
+}
+.language-switcher .bogo-language-switcher {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-radius: calc(var(--language-switcher-size) / 2);
+  background: transparent;
+  overflow: hidden;
+  transition: height 0.3s;
+}
+.language-switcher a {
+  text-decoration: none;
+}
+.language-switcher li {
+  display: block;
+  transition: background-color 0.2s ease-in-out, height 0.1s, padding 0.1s;
+  font-weight: 500;
+  width: calc(var(--language-switcher-size) - 2px);
+}
+.language-switcher ul.bogo-language-switcher li {
+  height: calc(var(--language-switcher-size) - 15px);
+  line-height: calc(var(--language-switcher-size) - 15px);
+}
+.language-switcher ul.bogo-language-switcher li.current {
+  height: calc(var(--language-switcher-size) - 2px);
+  line-height: calc(var(--language-switcher-size) - 2px);
+}
+.language-switcher:not(.open) .bogo-language-switcher {
+  border: 1px solid #fff;
+}
+.language-switcher:not(.open) li:not(.current) {
+  overflow: hidden;
+  height: 0;
+  padding: 0;
+}
+.language-switcher.open {
+  --text-color: var(--accent);
+}
+.language-switcher.open .bogo-language-switcher {
+  background: #fff;
+}
+.language-switcher.open li {
+  width: var(--language-switcher-size);
+}
+.language-switcher.open li.current {
+  border-radius: calc(var(--language-switcher-size) / 2);
+  border: 1px solid var(--text-color);
+}
+.language-switcher.open li:last-child {
+  height: calc(var(--language-switcher-size) - 2px);
+  line-height: calc(var(--language-switcher-size) - 2px);
+}
+.language-switcher .bogo-language-name {
+  color: rgba(0, 46, 80, 0.25);
+}
+@media (max-width: 991px) {
+  .language-switcher {
+    --language-switcher-size: 45px;
+  }
+}
+@media (max-width: 767px) {
+  .language-switcher {
+    --language-switcher-size: 38px;
+  }
+}
+
+/* stylelint-disable-next-line no-descending-specificity */
 .load-more-container {
   text-align: center;
   margin: 45px 0;
@@ -4819,6 +4813,13 @@ p.has-text-color a {
 }
 .type-post .entry-content p {
   text-align: justify;
+}
+
+.blog .page-title {
+  text-align: center;
+  margin: 40px auto 80px;
+  font-weight: 600;
+  font-size: 48px;
 }
 
 /*# sourceMappingURL=style.css.map */

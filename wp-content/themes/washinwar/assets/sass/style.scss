@@ -16,6 +16,7 @@
 
 @import "blocks/blocks";
 
+@import "components/language-switcher";
 @import "components/load-more";
 @import "components/post-item";
 @import "components/posts-grid";
@@ -25,4 +26,11 @@
 
 .type-post .entry-content p {
 	text-align: justify;
+}
+
+.blog .page-title {
+	text-align: center;
+	margin: 40px auto 80px;
+	font-weight: 600;
+	font-size: 48px;
 }

@@ -59,13 +59,11 @@
             </div>
         </nav>
         <div class="main-right">
-            <div class="lang-switcher">
-                <div class="current">UA</div>
-                <ul class="lang-dropdown">
-                    <li><a href="/en/">EN</a></li>
-                    <li><a href="/no/">NO</a></li>
-                </ul>
-            </div>
+			<?php if ( $switcher = do_shortcode( '[bogo]' ) ) : ?>
+				<div class="language-switcher">
+					<?php echo $switcher; ?>
+				</div>
+			<?php endif; ?>
             <div class="support-btn">
                 <a class="btn support-us" href="<?php echo home_url('/') ?>#support-us">Підтримати</a>
             </div>

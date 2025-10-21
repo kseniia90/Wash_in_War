@@ -21,22 +21,56 @@
             </div>
         </div>
         <div class="col col-2">
-            <div class="footer-address">
-                <p class="subtitle">Національний офіс:</p>
-                <ul>
-                    <li>Богдана Хмельницького 48а, Київ</li>
-                    <li><a href="mailto:secretary@caritas.ua">secretary@caritas.ua</a></li>
-                </ul>
-            </div>
-            <div class="footer-address">
-                <p class="subtitle">Адреса для листування:</p>
-                <ul>
-                    <li>04053</li>
-                    <li>Київ-53</li>
-                    <li>а/с-81</li>
-                </ul>
-            </div>
-        </div>
+			<?php if (get_locale() === 'en_US') { ?>
+				<div class="footer-address">
+					<p class="subtitle">National Office:</p>
+					<ul>
+						<li>Bohdana Khmelnytskoho 48a, Kyiv</li>
+						<li><a href="mailto:secretary@caritas.ua">secretary@caritas.ua</a></li>
+					</ul>
+				</div>
+				<div class="footer-address">
+					<p class="subtitle">Mailing Address:</p>
+					<ul>
+						<li>04053</li>
+						<li>Kyiv-53</li>
+						<li>P.O. Box 81</li>
+					</ul>
+				</div>
+			<?php } elseif (get_locale() === 'nn_NO') { ?>
+				<div class="footer-address">
+					<p class="subtitle">Nasjonalt kontor:</p>
+					<ul>
+						<li>Bohdana Khmelnytskoho 48a, Kyiv</li>
+						<li><a href="mailto:secretary@caritas.ua">secretary@caritas.ua</a></li>
+					</ul>
+				</div>
+				<div class="footer-address">
+					<p class="subtitle">Postadresse:</p>
+					<ul>
+						<li>04053</li>
+						<li>Kyiv-53</li>
+						<li>P.O. Box 81</li>
+					</ul>
+				</div>
+			<?php } else { ?>
+				<div class="footer-address">
+					<p class="subtitle">Національний офіс:</p>
+					<ul>
+						<li>Богдана Хмельницького 48а, Київ</li>
+						<li><a href="mailto:secretary@caritas.ua">secretary@caritas.ua</a></li>
+					</ul>
+				</div>
+				<div class="footer-address">
+					<p class="subtitle">Адреса для листування:</p>
+					<ul>
+						<li>04053</li>
+						<li>Київ-53</li>
+						<li>а/с-81</li>
+					</ul>
+				</div>
+			<?php } ?>
+		</div>
     </div>
     <div class="container social">
         <a class="facebook" href="https://www.facebook.com/caritasukraine" target="_blank">

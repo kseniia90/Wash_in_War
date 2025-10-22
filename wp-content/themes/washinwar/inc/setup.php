@@ -59,9 +59,9 @@ if ( ! function_exists( 'washinwar_setup' ) ) {
 //		add_theme_support( 'custom-spacing' );
 
 		// Remove feed icon link from legacy RSS widget.
-//		add_filter( 'rss_widget_feed_link', '__return_empty_string' );
+		add_filter( 'rss_widget_feed_link', '__return_empty_string' );
 
-//		load_theme_textdomain( 'washinwar', get_template_directory() . '/languages' );
+		load_theme_textdomain( 'washinwar', get_template_directory() . '/languages' );
 	}
 }
 add_action( 'after_setup_theme', 'washinwar_setup' );

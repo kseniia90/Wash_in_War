@@ -37,7 +37,7 @@
 						<li>P.O. Box 81</li>
 					</ul>
 				</div>
-			<?php } elseif (get_locale() === 'nn_NO') { ?>
+			<?php } elseif (get_locale() === 'nb_NO') { ?>
 				<div class="footer-address">
 					<p class="subtitle">Nasjonalt kontor:</p>
 					<ul>

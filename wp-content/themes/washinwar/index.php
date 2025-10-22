@@ -14,6 +14,7 @@
 get_header(); ?>
 
 <div class="container">
+	<h1 class="page-title"><?php single_post_title(); ?></h1>
 <?php /*
 if ( have_posts() ) { ?>
 	<div class="latest-posts">
@@ -48,7 +49,7 @@ if ( have_posts() ) { ?>
 		<?php if ($GLOBALS['wp_query']->max_num_pages > 1 && $GLOBALS['wp_query']->max_num_pages > get_query_var( 'paged' )): ?>
 			<div class="load-more-container">
 				<div id="load-more" class="wp-block-button is-style-secondary-button">
-					<span class="btn"><?php esc_html_e('Більше новин', 'washinwar'); ?></span>
+					<span class="btn"><?php esc_html_e('More news', 'washinwar'); ?></span>
 				</div>
 			</div>
 		<?php endif; ?>

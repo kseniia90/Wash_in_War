@@ -69,7 +69,7 @@
 					<a class="btn support-us" href="<?php echo home_url('/') ?>#support-us">Support</a>
 				</div>
 			</div>
-		<?php } elseif (get_locale() === 'nn_NO') { ?>
+		<?php } elseif (get_locale() === 'nb_NO') { ?>
 			<nav class="main-menu">
 				<div class="main-menu-wrapper">
 					<ul>

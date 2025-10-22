@@ -34,7 +34,7 @@ function washinwar_bogo_language_switcher_links($links, $args)
 		if ($link['native_name'] === 'Українська') {
 			$link['native_name'] = 'UA';
 		}
-		if ($link['native_name'] === 'Norsk nynorsk') {
+		if ($link['native_name'] === 'Norsk bokmål') {
 			$link['native_name'] = 'NO';
 		}
 	}

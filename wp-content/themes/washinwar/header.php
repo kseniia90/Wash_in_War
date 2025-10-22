@@ -104,9 +104,9 @@
 				</div>
 			</nav>
 			<div class="main-right">
-				<?php if ( $switcher = do_shortcode( '[bogo]' ) ) : ?>
+				<?php if ( shortcode_exists( 'bogo' ) ) : ?>
 					<div class="language-switcher">
-						<?php echo $switcher; ?>
+						<?php echo do_shortcode( '[bogo]' ) ?>
 					</div>
 				<?php endif; ?>
 				<div class="support-btn">

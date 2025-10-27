@@ -20,6 +20,7 @@
 	.site-logo {
 		padding: 24px 0;
 		margin-right: auto;
+		//flex-shrink: 0;
 	}
 
 	.main-right {
@@ -61,7 +62,7 @@
 	}
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
 	.main-menu-wrapper > ul {
 		gap: 40px;
 	}
@@ -95,7 +96,7 @@
 	}
 
 	.main-menu-wrapper > ul > li {
-		margin: 0 15px;
+		margin: 0 5px;
 	}
 }
 

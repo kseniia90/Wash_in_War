@@ -34,3 +34,9 @@
 	font-weight: 600;
 	font-size: 48px;
 }
+
+.single-post {
+	main > .container {
+		max-width: 1064px;
+	}
+}

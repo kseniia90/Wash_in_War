@@ -6,10 +6,10 @@
 	<div class="container">
 		<div class="top-banner-content wow fadeInUp" style="animation-delay: 3s;">
 			<div class="banner-title">
-				<p>WASH i Krig –</p>En informasjons- og utdanningskampanje
+				<p>WASHinWar –</p>En informasjons- og utdanningskampanje
 			</div>
 			<div class="desc">
-				<p>Som en del av Caritas Ukrainas WASH-program ønsker vi å vise de miljømessige og humanitære dimensjonene av krig.</p>
+				<p>Med utgangspunkt i Caritas Ukraina sitt WASH-program, ønsker vi å legge til rette for at vi her i Norge kan ta lærdom av Ukrainas dyrekjøpte erfaringer fra en moderne krigssituasjon og humanitær krise.</p>
 			</div>
 		</div>
 	</div>
@@ -22,48 +22,48 @@
 	<div class="container">
 
 		<div id="mission" class="mission wow fadeInUp" style="animation-delay: .4s;">
-			<p class="uppercase">Vår misjon</p>
+			<p class="uppercase">Vårt mål</p>
 			<p class="title-light">
-				Vi ønsker å rette oppmerksomheten mot de katastrofale konsekvensene av krig for Ukrainas vannressurser og samle det internasjonale samfunnet, myndigheter, humanitære organisasjoner og vårt eget samfunn for å overvinne disse utfordringene.
+				Å rette oppmerksomheten mot de katastrofale konsekvensene av krig for Ukrainas vannressurser, og å tydeliggjøre de nødvendige grep myndigheter, humanitære organisasjoner og sivilsamfunn vil komme til å måtte ta, dersom vi skal kunne komme en tilsvarende krisesituasjon her i landet i forkjøpet.
 			</p>
 		</div>
 
 		<div class="effect wow fadeInUp">
-			<p class="title">Konsekvenser av russiske angrep på kritisk infrastruktur:</p>
+			<p class="title">Konsekvenser av angrep på kritisk infrastruktur i Ukraina:</p>
 
 			<div class="item wow fadeInUp">
 				<p class="subtitle">8,5 millioner mennesker</p>
-				<p class="desc">vil ha behov for bistand med vannforsyning, sanitær og hygiene i 2025.</p>
+				<p class="desc">hadde behov for bistand knyttet til vannforsyning, sanitær og hygiene i 2025.</p>
 				<p class="source">Kilde: FNs humanitære responsplan</p>
 			</div>
 
 			<div class="item wow fadeInUp">
-				<p class="subtitle">Over 1 000 km med vannforsyningsnettverk</p>
-				<p class="desc">har blitt ødelagt på grunn av kamphandlinger og ødeleggelse.</p>
+				<p class="subtitle">Over 1000km med vannforsyningsnettverk</p>
+				<p class="desc">har blitt ødelagt på grunn av krig.</p>
 				<p class="source">Kilde: Ukrinform, basert på data fra presidenten for foreningen "Ukrvodokanalecology" Dmytro Novytskyi.</p>
 			</div>
 
 			<div class="item wow fadeInUp">
 				<p class="subtitle">18 kubikkilometer vann gikk tapt</p>
-				<p class="desc">da russerne sprengte Kakhovka vannkraftverk – nok til å forsyne hele verdens befolkning med vann i to dager.</p>
+				<p class="desc">da Russland sprengte Kakhovka vannkraftverket – nok til å forsyne hele verdens befolkning med vann i to dager.</p>
 				<p class="source">Kilde: ArgoPolit, basert på data fra generaldirektøren i "Ukrhydroenergo" Ihor Syrota.</p>
 			</div>
 
 			<div class="item wow fadeInUp">
-				<p class="subtitle">₴104,06 milliarder</p>
-				<p class="desc">i skader påført ukrainas  vannressurser.</p>
+				<p class="subtitle">NOK 22,8 milliarder</p>
+				<p class="desc">i skader har blitt påført Ukrainas vannressurser.</p>
 				<p class="source">Kilde: Ukrainas miljødepartement.</p>
 			</div>
 
 			<div class="item wow fadeInUp">
 				<p class="subtitle">23 444 tonn</p>
-				<p class="desc">forurensende stoffer har forgiftet vannkilder.</p>
+				<p class="desc">forurensede stoffer har forgiftet drikkevannet.</p>
 				<p class="source">Kilde: Ukrainas miljødepartement.</p>
 			</div>
 		</div>
 
 		<div class="title-block wow fadeInUp" style="animation-delay: .7s;">
-			<p class="title-light">Dette er ikke bare tall – dette er realiteten millioner av mennesker lever i.</p>
+			<p class="title-light">Dette er ikke bare tall – det er realiteten for millioner av mennesker.</p>
 			<!--                <a href="#" class="btn download-btn">Download</a>-->
 		</div>
 
@@ -71,9 +71,9 @@
 			<div class="map-row reduced">
 				<p class="title wow fadeInUp">Kart over tap og gjenoppbygging</p>
 				<div class="desc wow fadeInUp">
-					<p>Et interaktiv kart viser krigens påvirkning  på Ukrainas vannressurser. Du kan se områder med økologisk katastrofe – ødelagte vannmagasiner, forurensede elver og skadede vannforsyningsnettverk.</p>
-					<p>Men dette kartet handler ikke bare om tap. Det viser også <b>regioner der tilgangen til vann er blitt gjenopprettet</b> takket være innsatsen fra Caritas Ukraina, internasjonale partnere og lokale samfunn.</p>
-					<p>Utforsk kartet for å lære mer om utfordringene og suksessene i kampen for rent vann.</p>
+					<p>Dette kartet viser krigens påvirkning på Ukrainas vannressurser. Her kan du se områder med stor økologisk påvirkning – ødelagte vannmagasiner, forurensede elver og skadde vannforsyningsnettverk.</p>
+					<p>Men kartet viser også progresjon i regioner der tilgang til vann er blitt gjenopprettet takket være innsatsen fra Caritas Ukraina, internasjonale partnere og lokale samfunn.</p>
+					<p>Utforsk kartet for å lære mer om utfordringene i kampen for rent vann.</p>
 					<p class="note">data for 2024</p>
 				</div>
 			</div>
@@ -1280,47 +1280,47 @@
 
 <div class="container">
 	<div class="title-block title-block2" id="about-project">
-		<p class="title-light wow fadeInUp" style="animation-delay: .3s;">Caritas Ukraina jobber aktivt med implementeringen av sitt <b>Vann, Sanitær og Helse (WASH) program</b> for å støtte berørte regioner.</p>
+		<p class="title-light wow fadeInUp" style="animation-delay: .3s;">Caritas Ukraina jobber aktivt med implementeringen av <b>Water, Sanitation & Hygiene (WASH) -programmet</b> for å støtte berørte regioner.</p>
 	</div>
 </div>
 
 <div class="what-we-do container">
-	<p class="title wow fadeInUp" style="animation-delay: .4s;">Hva vi gjør</p>
+	<p class="title wow fadeInUp" style="animation-delay: .4s;">Arbeidet til Caritas Ukraina</p>
 	<div class="row wow fadeInUp" style="animation-delay: .6s;">
 		<div class="item">
 			<img src="<?php echo get_theme_file_uri('assets') ?>/img/wwd_1.svg" alt="icon" width="100" height="100">
 			<p class="subtitle">Gjenoppretting av vannforsyningskilder</p>
-			<p class="desc">Vi  reparerer  brønner, installerer pumpeanlegg og setter opp modulære vannsystemer og sanitærsoner.</p>
+			<p class="desc">Med støtte fra Caritas Norge reparerer Caritas Ukraina brønner, installerer pumpeanlegg og setter opp modulære vannsystemer og sanitærsoner.</p>
 		</div>
 
 		<div class="item">
 			<img src="<?php echo get_theme_file_uri('assets') ?>/img/wwd_2.svg" alt="icon" width="100" height="100">
 			<p class="subtitle">Tilbyr vannfiltreringsstasjoner til lokalsamfunn</p>
-			<p class="desc">Vi installerer høyytelses og innovative vannrenseutstyr og trener lokal personell i korrekt drift.</p>
+			<p class="desc">De installerer innovative løsninger med høy kapasitet til å rense vann, og de trener lokalt personell i drift.</p>
 		</div>
 
 		<div class="item">
 			<img src="<?php echo get_theme_file_uri('assets') ?>/img/wwd_3.svg" alt="icon" width="100" height="100">
-			<p class="subtitle">Distribuerer hygieneutstyr</p>
-			<p class="desc">Vi støtter mennesker i frontlinjeområder der tilgangen på nødvendige hygieneprodukter er sterkt begrenset.</p>
+			<p class="subtitle">Distribuerer hygieneartikler</p>
+			<p class="desc">Caritas Ukraina støtter mennesker ved frontnære områder der tilgangen til nødvendige hygieneartikler er sterkt begrenset.</p>
 		</div>
 
 		<div class="item">
 			<img src="<?php echo get_theme_file_uri('assets') ?>/img/wwd_4.svg" alt="icon" width="100" height="100">
 			<p class="subtitle">Forbedrer sanitære forhold</p>
-			<p class="desc">Vi reparerer toaletter, dusjer og bad i sykehus, skoler og ly.</p>
+			<p class="desc">Caritas Ukraina reparerer toaletter, dusjer og bad der det er behov.</p>
 		</div>
 
 		<div class="item">
 			<img src="<?php echo get_theme_file_uri('assets') ?>/img/wwd_5.svg" alt="icon" width="100" height="100">
 			<p class="subtitle">Leverer drikkevann til berørte lokalsamfunn</p>
-			<p class="desc">Vi transporterer vann til områder der gjenoppretting er umulig og tilbyr hjemlevering til personer med nedsatt funksjonsevne.</p>
+			<p class="desc">Caritas Ukraina transporterer vann til områder der gjenoppretting av drikkevann er umulig, og vi tilbyr hjemelevering til personer med nedsatt funksjonsevne.</p>
 		</div>
 
 		<div class="item">
 			<img src="<?php echo get_theme_file_uri('assets') ?>/img/wwd_6.svg" alt="icon" width="100" height="100">
-			<p class="subtitle">Bevisstgjøring og advocacy</p>
-			<p class="desc">Vi fremhever krigens ødeleggende påvirkning på vannressurser og det akutte behovet for felles innsats.</p>
+			<p class="subtitle">Bevisstgjøring</p>
+			<p class="desc">Caritas Ukraina synliggjør krigens ødeleggende påvirkning på vannressurser, og det akutte behovet for felles innsats.</p>
 		</div>
 
 	</div>
@@ -1328,16 +1328,16 @@
 
 <div class="container">
 	<div class="results">
-		<p class="title">Vår påvirkning</p>
-		<p class="title-light">I 2024 har WASH-prosjektene til Caritas Ukraina allerede hjulpet 200 000 mennesker i Donetsk, Dnipropetrovsk, Kharkiv, Zaporizhzhia og Mykolaiv-regionene. Behovene fortsetter å vokse for hver dag som går.</p>
+		<p class="title">Hva har Caritas oppnådd gjennom vårt partnerarbeid?</p>
+		<p class="title-light">I 2024 hjalp WASH-prosjektene til Caritas Ukraina 200 000 mennesker i Donetsk, Dnipropetrovsk, Kharkiv, Zaporizhzhia og Mykolaiv-regionene. Behovene fortsetter å vokse for hver dag som går.</p>
 	</div>
 	<div class="stories" id="stories">
-		<p class="title">Historier fra berørte regioner</p>
+		<p class="title">Historier fra de berørte regionene</p>
 		<div class="stories-content">
 			<div class="item">
 				<div class="col">
-					<p class="subtitle">Etter ødeleggelsen av Kakhovka-demningen ble fru Lyudmylas hjem fullstendig oversvømt</p>
-					<p class="desc">På bildet står fru Lyudmyla foran hjemmet sitt i Novovasylivka, Snihurivka kommune, Mykolaiv-regionen. Etter at Kakhovka-demningen ble ødelagt av russiske styrker, ble huset hennes fullstendig oversvømt.</p>
+					<p class="subtitle">Etter ødeleggelsen av Kakhovka-demningen ble Lyudmylas hjem fullstendig oversvømt.</p>
+					<p class="desc">På bildet står Lyudmyla foran hjemmet sitt i Novovasylivka. Etter at demningen ble ødelagt av russiske styrker, ble huset hennes fullstendig oversvømt.</p>
 					<button class="btn open-story" data-popup="popup-1">Les mer</button>
 				</div>
 				<div class="col-img">
@@ -1350,16 +1350,16 @@
 					<img src="<?php echo get_theme_file_uri('assets') ?>/img/stories-2-s.avif" alt="img" width="469" height="309">
 				</div>
 				<div class="col">
-					<p class="subtitle">Folk møter den daglige kampen for å finne vann til grunnleggende behov</p>
-					<p class="desc">Novooleksandrivka er en av mange ukrainske samfunn som mistet tilgangen til rent drikkevann på grunn av krigen.</p>
+					<p class="subtitle">Den daglige kampen for å finne vann</p>
+					<p class="desc">Novooleksandrivka er en av mange ukrainske samfunn som mistet tilgangen til drikkevann på grunn av krigen.</p>
 					<button class="btn open-story" data-popup="popup-2">Les mer</button>
 				</div>
 			</div>
 
 			<div class="item">
 				<div class="col">
-					<p class="subtitle">"Det er ikke bare vann, det erogså  å vite at vi ikke er glemt"</p>
-					<p class="desc">En annen helt i vårt prosjekt er 73 år gamle Valentina Mykolaivna fra Kramatorsk, en by som lider under konstant russisk bombing.</p>
+					<p class="subtitle">"Det er ikke bare vann. Det handler også om at vi ikke blir glemt"</p>
+					<p class="desc">73 år gamle Valentina er fra Kramatorsk - en by som lider under konstante militære angrep.</p>
 					<button class="btn open-story" data-popup="popup-3">Les mer</button>
 				</div>
 				<div class="col-img">
@@ -1382,7 +1382,7 @@
 		<div class="left">
 			<img src="<?php echo get_theme_file_uri('assets') ?>/img/quote.svg" alt="icon" width="100" height="100">
 			<div class="col wow fadeInUp" style="animation-delay: .5s;">
-				<p class="desc">Vi jobber for å støtte krigsrammede mennesker og samfunn i deres arbeid for å komme seg etter krisen og sikre tilgang til nødvendige vann-, sanitær- og hygienetjenester.</p>
+				<p class="desc">Vi jobber for å støtte krigsrammede mennesker og samfunn i deres arbeid med å komme seg gjennom krisen, og samtidig sikre tilgang til nødvendige vann-, sanitær- og hygienetjenester</p>
 				<p class="author">Tetiana Yatsiuk</p>
 				<p class="position">Leder for WASH-programmet, Caritas Ukraina</p>
 			</div>
@@ -1393,21 +1393,21 @@
 	</div>
 
 	<div class="help wow fadeInUp" style="animation-delay: .3s;">
-		<p class="title">Hvordan kan du hjelpe?</p>
+		<p class="title">Hvordan kan du gjøre?</p>
 
 		<div class="item">
-			<p class="subtitle">Besøk WASH in WAR-utstillingen</p>
-			<p class="desc">Lær mer om problemet og de virkelige historiene til de berørte.</p>
+			<p class="subtitle">Besøk WASHinWar-utstillingen</p>
+			<p class="desc">Lær mer om krigen og se hvordan erfaringene fra Ukraina kan bidra til å styrke norsk beredskap.</p>
 		</div>
 
 		<div class="item">
 			<p class="subtitle">Del</p>
-			<p class="desc">Del informasjon om dette initiativet på sosiale medier for å øke bevisstheten om krigens innvirkning på Ukrainas vannressurser.</p>
+			<p class="desc">Del informasjon på sosiale medier for å øke bevisstheten rundt krigens påvirkning på Ukrainas vannressurser.</p>
 		</div>
 
 		<div class="item">
-			<p class="subtitle">Støtt Caritas Ukraina</p>
-			<p class="desc">Bli med oss i å gjenopprette tilgangen til rent vann i de berørte regionene.</p>
+			<p class="subtitle">Støtt Caritas Norge</p>
+			<p class="desc">Hjelp oss å gjenopprette tilgangen til rent vann i de berørte regionene gjennom våre partnerorganisasjoner.</p>
 		</div>
 	</div>
 

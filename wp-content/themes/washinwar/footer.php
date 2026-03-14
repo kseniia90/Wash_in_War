@@ -20,7 +20,20 @@
                 <a href="https://caritas.ua"><img src="<?php echo get_theme_file_uri('assets') ?>/img/logo-footer2.svg" width="177" height="33" alt="logo"></a>
             </div>
         </div>
-        <div class="col col-2">
+		<div class="col col-2">
+			<div class="site-logo">
+				<div class="item">
+					<img src="<?php echo get_theme_file_uri('assets') ?>/img/logo-footer-caritas-norge.avif" width="400"
+						 height="121" alt="Caritas Norge">
+				</div>
+				<div class="item">
+					<img src="<?php echo get_theme_file_uri('assets') ?>/img/logo-footer-norway.avif" width="400"
+						 height="75"
+						 alt="Norway">
+				</div>
+			</div>
+		</div>
+        <div class="col col-3">
 			<?php if (get_locale() === 'en_US') { ?>
 				<div class="footer-address">
 					<p class="subtitle">National Office:</p>

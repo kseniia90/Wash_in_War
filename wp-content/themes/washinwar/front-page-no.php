@@ -5,11 +5,10 @@
              <?php echo get_theme_file_uri('assets') ?>/img/banner-768.avif 768w, <?php echo get_theme_file_uri('assets') ?>/img/banner-1440.avif 1440w, <?php echo get_theme_file_uri('assets') ?>/img/banner-1920.avif 1920w, <?php echo get_theme_file_uri('assets') ?>/img/banner-2560.avif 2560w">
 	<div class="container">
 		<div class="top-banner-content wow fadeInUp" style="animation-delay: 3s;">
-			<div class="banner-title">
-				<p>WASHinWar –</p>En informasjons- og utdanningskampanje
-			</div>
+			<div class="banner-title">#WASHinWAR —</div>
+			<div class="banner-subtitle">internasjonal plattform for vannsikkerhet, påvirkningsarbeid og partnerskap</div>
 			<div class="desc">
-				<p>Med utgangspunkt i Caritas Ukraina sitt WASH-program, ønsker vi å legge til rette for at vi her i Norge kan ta lærdom av Ukrainas dyrekjøpte erfaringer fra en moderne krigssituasjon og humanitær krise.</p>
+				<p>Et initiativ fra Caritas Ukraina som kobler Ukrainas erfaringer med WASH under krigen med internasjonal ekspertise, partnerskap og praktiske løsninger for vannsikkerhet, gjenoppbygging og motstandsdyktighet.</p>
 			</div>
 		</div>
 	</div>
@@ -18,47 +17,66 @@
 <div id="news" class="container">
 	<?php get_template_part( 'template-parts/latest-posts' ); ?>
 </div>
+<div class="container">
+	<div class="effect wow fadeInUp">
+		<p class="title">Hvordan vi skaper effekt</p>
+
+		<div class="item wow fadeInUp">
+			<p class="subtitle">Internasjonale partnerskap</p>
+			<p class="desc">Vi kobler ukrainske WASH-aktører, lokalsamfunn og institusjoner med internasjonale fagfolk innen vannsektoren, vann- og avløpsselskaper, kommuner, givere, næringsliv og ekspertorganisasjoner.</p>
+		</div>
+
+		<div class="item wow fadeInUp">
+			<p class="subtitle">Kunnskapsdeling og faglig utveksling</p>
+			<p class="desc">Vi legger til rette for ekspertsamlinger, tekniske konsultasjoner, opplæring, studiebesøk og utveksling av praktisk erfaring mellom Ukraina og internasjonale partnere.</p>
+		</div>
+
+		<div class="item wow fadeInUp">
+			<p class="subtitle">Påvirkningsarbeid og internasjonal synlighet</p>
+			<p class="desc">Gjennom utstillinger, internasjonale arrangementer, faglige fora, medier og politisk dialog holder vi Ukrainas utfordringer og erfaringer innen vannsikkerhet på den internasjonale dagsordenen.</p>
+		</div>
+
+		<div class="item wow fadeInUp">
+			<p class="subtitle">Fra partnerskap til løsninger</p>
+			<p class="desc">Vi utvikler muligheter for felles initiativer, pilotløsninger, teknisk samarbeid og finansieringsforslag som støtter en motstandsdyktig WASH-infrastruktur og Ukrainas gjenoppbygging.</p>
+		</div>
+	</div>
+</div>
 <div class="bg">
 	<div class="container">
 
 		<div id="mission" class="mission wow fadeInUp" style="animation-delay: .4s;">
-			<p class="uppercase">Vårt mål</p>
-			<p class="title-light">
-				Å rette oppmerksomheten mot de katastrofale konsekvensene av krig for Ukrainas vannressurser, og å tydeliggjøre de nødvendige grep myndigheter, humanitære organisasjoner og sivilsamfunn vil komme til å måtte ta, dersom vi skal kunne komme en tilsvarende krisesituasjon her i landet i forkjøpet.
+			<p class="uppercase">MISJON</p>
+			<p class="title-light">Vårt oppdrag er å sette Ukrainas utfordringer knyttet til vannsikkerhet og landets erfaringer fra krigen på den internasjonale dagsordenen, og omsette synlighet til partnerskap og konkret handling.
+				<br>#WASHinWAR kobler ukrainske lokalsamfunn, WASH-fagfolk og institusjoner med internasjonale partnere, ekspertise og ressurser for å styrke vannsikkerheten og bidra til en motstandsdyktig gjenoppbygging.
 			</p>
 		</div>
 
 		<div class="effect wow fadeInUp">
-			<p class="title">Konsekvenser av angrep på kritisk infrastruktur i Ukraina:</p>
+			<p class="title">Vannkrisen i Ukraina: omfang</p>
+
+			<div class="item wow fadeInUp">
+				<p class="subtitle">7,8 milliarder USD</p>
+				<p class="desc">i direkte skader på Ukrainas vannforsynings- og sanitærsektor</p>
+				<p class="source">Per 31. desember 2025.<br>Kilde: RDNA5, Ukrainas regjering, Verdensbanken, EU og FN, 2026.</p>
+			</div>
+
+			<div class="item wow fadeInUp">
+				<p class="subtitle">17,5 milliarder USD</p>
+				<p class="desc">er nødvendig for å gjenopprette og gjenoppbygge Ukrainas vannforsynings- og sanitærsystemer i perioden 2026–2035</p>
+				<p class="source">Kilde: RDNA5, 2026.</p>
+			</div>
 
 			<div class="item wow fadeInUp">
 				<p class="subtitle">8,5 millioner mennesker</p>
-				<p class="desc">hadde behov for bistand knyttet til vannforsyning, sanitær og hygiene i 2025.</p>
-				<p class="source">Kilde: FNs humanitære responsplan</p>
+				<p class="desc">har behov for en eller annen form for WASH-bistand i Ukraina</p>
+				<p class="source">Kilde: UNICEF Ukraina, Recovery Brief, juni 2026.</p>
 			</div>
 
 			<div class="item wow fadeInUp">
-				<p class="subtitle">Over 1000km med vannforsyningsnettverk</p>
-				<p class="desc">har blitt ødelagt på grunn av krig.</p>
-				<p class="source">Kilde: Ukrinform, basert på data fra presidenten for foreningen "Ukrvodokanalecology" Dmytro Novytskyi.</p>
-			</div>
-
-			<div class="item wow fadeInUp">
-				<p class="subtitle">18 kubikkilometer vann gikk tapt</p>
-				<p class="desc">da Russland sprengte Kakhovka vannkraftverket – nok til å forsyne hele verdens befolkning med vann i to dager.</p>
-				<p class="source">Kilde: ArgoPolit, basert på data fra generaldirektøren i "Ukrhydroenergo" Ihor Syrota.</p>
-			</div>
-
-			<div class="item wow fadeInUp">
-				<p class="subtitle">NOK 22,8 milliarder</p>
-				<p class="desc">i skader har blitt påført Ukrainas vannressurser.</p>
-				<p class="source">Kilde: Ukrainas miljødepartement.</p>
-			</div>
-
-			<div class="item wow fadeInUp">
-				<p class="subtitle">23 444 tonn</p>
-				<p class="desc">forurensede stoffer har forgiftet drikkevannet.</p>
-				<p class="source">Kilde: Ukrainas miljødepartement.</p>
+				<p class="subtitle">Over 24 % av husholdningene</p>
+				<p class="desc">har E. coli påvist i drikkevannet</p>
+				<p class="source">Kilde: UNICEF Ukraina, 2026.</p>
 			</div>
 		</div>
 
@@ -1278,6 +1296,11 @@
 	</div>
 </div>
 
+<div class="team-section container">
+	<p class="title">TEAMET VÅRT</p>
+	<?php get_template_part( 'template-parts/team' ); ?>
+</div>
+
 <div class="container">
 	<div class="title-block title-block2" id="about-project">
 		<p class="title-light wow fadeInUp" style="animation-delay: .3s;">Caritas Ukraina jobber aktivt med implementeringen av <b>Water, Sanitation & Hygiene (WASH) -programmet</b> for å støtte berørte regioner.</p>
@@ -1329,7 +1352,15 @@
 <div class="container">
 	<div class="results">
 		<p class="title">Hva har Caritas oppnådd gjennom vårt partnerarbeid?</p>
-		<p class="title-light">I 2024 hjalp WASH-prosjektene til Caritas Ukraina 200 000 mennesker i Donetsk, Dnipropetrovsk, Kharkiv, Zaporizhzhia og Mykolaiv-regionene. Behovene fortsetter å vokse for hver dag som går.</p>
+		<div class="col">
+		<p class="title-light">SIDEN 2022 HAR CARITAS UKRAINAS WASH-PROGRAM:</p>
+			<div class="desc">
+				<p><b>1,326+ millioner mennesker</b> fått tilgang til WASH-tjenester</p>
+				<p><b>400+ WASH-anlegg og -systemer</b> blitt rehabilitert, oppgradert eller støttet</p>
+				<p><b>Mer enn 35 millioner euro</b> blitt investert i gjenoppretting av vannforsyning og WASH-innsats</p>
+				<p>Innsatsen omfatter vannforsyning, vannbehandling og avløpssystemer, løsninger for oppvarming og reservestrøm, sanitær- og hygienefasiliteter, utstyr for overvåking av vannkvalitet og støtte til reparasjonsteam i vann- og avløpssektoren.</p>
+			</div>
+		</div>
 	</div>
 	<div class="stories" id="stories">
 		<p class="title">Historier fra de berørte regionene</p>
@@ -1394,20 +1425,21 @@
 
 	<div class="help wow fadeInUp" style="animation-delay: .3s;">
 		<p class="title">Hvordan kan du gjøre?</p>
-
 		<div class="item">
-			<p class="subtitle">Besøk WASHinWar-utstillingen</p>
-			<p class="desc">Lær mer om krigen og se hvordan erfaringene fra Ukraina kan bidra til å styrke norsk beredskap.</p>
+			<p class="subtitle">BLI PARTNER</p>
+			<p class="desc">Bli med i #WASHinWAR for å utvikle internasjonalt, faglig og teknisk samarbeid for Ukrainas vannsikkerhet og gjenoppbygging.</p>
 		</div>
-
 		<div class="item">
-			<p class="subtitle">Del</p>
-			<p class="desc">Del informasjon på sosiale medier for å øke bevisstheten rundt krigens påvirkning på Ukrainas vannressurser.</p>
+			<p class="subtitle">Del ekspertise og løsninger</p>
+			<p class="desc">Bidra med ekspertise, teknologi og praktiske løsninger, eller delta i faglige utvekslinger, ekspertdiskusjoner og kompetansebyggende aktiviteter.</p>
 		</div>
-
 		<div class="item">
-			<p class="subtitle">Støtt Caritas Norge</p>
-			<p class="desc">Hjelp oss å gjenopprette tilgangen til rent vann i de berørte regionene gjennom våre partnerorganisasjoner.</p>
+			<p class="subtitle">Vær vertskap for #WASHinWAR</p>
+			<p class="desc">Ta #WASHinWAR-utstillingen, en ekspertdialog eller et faglig arrangement til ditt land, din by eller institusjon.</p>
+		</div>
+		<div class="item">
+			<p class="subtitle">Støtt WASH-gjenoppbyggingen i Ukraina</p>
+			<p class="desc">Støtt Caritas Ukraina i arbeidet med å gjenopprette tilgangen til trygt vann og styrke motstandsdyktig WASH-infrastruktur i berørte lokalsamfunn.</p>
 		</div>
 	</div>
 

@@ -5,6 +5,8 @@ services:
       dockerfile: docker/php-apache/Dockerfile
     ports:
       - 80:80
+#    labels:
+#      traefik.http.routers.wash.rule: "Host(`wash.localhost`)"
     volumes:
     - .:/var/www/html/
     depends_on:

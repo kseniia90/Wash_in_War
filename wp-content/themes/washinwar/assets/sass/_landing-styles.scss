@@ -7,6 +7,7 @@
 @import "landing-styles/header";
 
 @import "landing-styles/front-page-only";
+@import "landing-styles/team";
 
 
 .swiper-button-next,
@@ -112,6 +113,17 @@
 	display: grid;
 	grid-template-columns: 1fr 2fr;
 	gap: 60px;
+
+	.col {
+		//.subtitle {
+		//	margin-bottom: 1.1rem;
+		//}
+		.desc {
+			p {
+				margin-bottom: 0.5rem;
+			}
+		}
+	}
 }
 
 .stories {
@@ -258,6 +270,7 @@
 
 	.title {
 		padding-right: 16px;
+		grid-row: span 2;
 	}
 
 	.item {

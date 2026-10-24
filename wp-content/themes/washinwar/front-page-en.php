@@ -5,11 +5,10 @@
              <?php echo get_theme_file_uri('assets') ?>/img/banner-768.avif 768w, <?php echo get_theme_file_uri('assets') ?>/img/banner-1440.avif 1440w, <?php echo get_theme_file_uri('assets') ?>/img/banner-1920.avif 1920w, <?php echo get_theme_file_uri('assets') ?>/img/banner-2560.avif 2560w">
 	<div class="container">
 		<div class="top-banner-content wow fadeInUp" style="animation-delay: 3s;">
-			<div class="banner-title">
-				<p>WASH in WAR –</p>An informational and educational campaign
-			</div>
+			<div class="banner-title">#WASHinWAR —</div>
+			<div class="banner-subtitle">International Platform for Water Security, Advocacy and Partnerships</div>
 			<div class="desc">
-				<p>As part of the WASH program by Caritas Ukraine, we integrate the environmental and humanitarian dimensions of war</p>
+				<p>An initiative of Caritas Ukraine connecting Ukraine’s wartime WASH experience with international expertise, partnerships and practical solutions for water security, recovery and resilience.</p>
 			</div>
 		</div>
 	</div>
@@ -18,45 +17,68 @@
 <div id="news" class="container">
 	<?php get_template_part( 'template-parts/latest-posts' ); ?>
 </div>
+<div class="container">
+	<div class="effect wow fadeInUp">
+		<p class="title">How We Create Impact</p>
+
+		<div class="item wow fadeInUp">
+			<p class="subtitle">International Partnerships</p>
+			<p class="desc">We connect Ukrainian WASH actors, communities and institutions with international water-sector professionals, utilities, municipalities, donors, businesses and expert organisations.</p>
+		</div>
+
+		<div class="item wow fadeInUp">
+			<p class="subtitle">Knowledge & Professional Exchange</p>
+			<p class="desc">We facilitate expert sessions, technical consultations, trainings, study visits and exchange of practical experience between Ukraine and international partners.</p>
+		</div>
+
+		<div class="item wow fadeInUp">
+			<p class="subtitle">Advocacy & International Visibility</p>
+			<p class="desc">Through exhibitions, international events, professional forums, media and policy dialogue, we keep Ukraine’s water security challenges and experience on the international agenda.</p>
+		</div>
+
+		<div class="item wow fadeInUp">
+			<p class="subtitle">From Partnerships to Solutions</p>
+			<p class="desc">We develop opportunities for joint initiatives, pilot solutions, technical cooperation and funding proposals supporting resilient WASH infrastructure and Ukraine’s recovery.</p>
+		</div>
+	</div>
+</div>
 <div class="bg">
 	<div class="container">
 
 		<div id="mission" class="mission wow fadeInUp" style="animation-delay: .4s;">
 			<p class="uppercase">MISSION</p>
-			<p class="title-light">We strive to draw attention to the catastrophic consequences of warfare on Ukraine’s water resources and to unite the international community, government, humanitarian organizations, and our society to overcome these challenges.</p>
+			<p class="title-light">Our mission is to bring Ukraine’s water security challenges and wartime experience to
+				the international agenda and transform visibility into partnerships and action.
+				<br>#WASHinWAR connects Ukrainian communities, WASH professionals and institutions with international
+				partners, expertise and resources to strengthen water security and support resilient recovery.
+			</p>
 		</div>
 
 		<div class="effect wow fadeInUp">
-			<p class="title">Consequences of Russian Attacks on Critical Infrastructure:</p>
+			<p class="title">Ukraine’s Water Crisis: The Scale</p>
+
+			<div class="item wow fadeInUp">
+				<p class="subtitle">$7.8 billion</p>
+				<p class="desc">Direct damage to Ukraine’s water supply and sanitation sector</p>
+				<p class="source">As of 31 December 2025.<br>Source: RDNA5, Government of Ukraine, World Bank, EU and UN, 2026.</p>
+			</div>
+
+			<div class="item wow fadeInUp">
+				<p class="subtitle">$17.5 billion</p>
+				<p class="desc">needed to recover and rebuild Ukraine’s water supply and sanitation systems in 2026–2035</p>
+				<p class="source">Source: RDNA5, 2026.</p>
+			</div>
 
 			<div class="item wow fadeInUp">
 				<p class="subtitle">8.5 million people</p>
-				<p class="desc">will need assistance with water supply, sanitation, and hygiene in 2025.</p>
-				<p class="source">Source: UN Humanitarian Response Plan</p>
+				<p class="desc">require some form of WASH assistance in Ukraine</p>
+				<p class="source">Source: UNICEF Ukraine, Recovery Brief, June 2026.</p>
 			</div>
 
 			<div class="item wow fadeInUp">
-				<p class="subtitle">Over 1,000 km of water supply networks</p>
-				<p class="desc">have been destroyed due to shelling and hostilities.</p>
-				<p class="source">Source: Ukrinform, based on data from the President of the Association "Ukrvodokanalecology" Dmytro Novytskyi.</p>
-			</div>
-
-			<div class="item wow fadeInUp">
-				<p class="subtitle">18 cubic kilometers of water</p>
-				<p class="desc">were destroyed by the Russians during the explosion of the Kakhovka Hydroelectric Power Station, an amount that could supply the entire human population with water for two days.</p>
-				<p class="source">Source: ArgoPolit, based on data from the General Director of "Ukrhydroenergo" Ihor Syrota.</p>
-			</div>
-
-			<div class="item wow fadeInUp">
-				<p class="subtitle">₴104.06 billion</p>
-				<p class="desc">in damages inflicted on our water resources.</p>
-				<p class="source">Source: Ministry of Environmental Protection and Natural Resources of Ukraine.</p>
-			</div>
-
-			<div class="item wow fadeInUp">
-				<p class="subtitle">23,444 tons</p>
-				<p class="desc">of pollutants have poisoned water bodies.</p>
-				<p class="source">Source: Ministry of Environmental Protection and Natural Resources of Ukraine.</p>
+				<p class="subtitle">24%+ of households</p>
+				<p class="desc">have E. coli detected in their drinking water</p>
+				<p class="source">Source: UNICEF Ukraine, 2026.</p>
 			</div>
 		</div>
 
@@ -802,7 +824,7 @@
 				</div>
 			</div>
 
-			<!--<div class="map-row row2">
+			<?php /*<div class="map-row row2">
 				<div class="desc wow fadeInUp">
 					<p>The <b>WASH in WAR</b> photo exhibition is an initiative that reveals the devastating impact of war on Ukraine’s water resources and highlights real stories of people who have lost access to safe drinking water.</p>
 					<p>This exhibition is not only about loss but also about the fight for recovery, community support, and finding solutions for the future.</p>
@@ -815,7 +837,7 @@
 					<p class="desc">Red Building of Taras Shevchenko National University of Kyiv (60 Volodymyrska Street, Kyiv)</p>
 				</div>
 
-			</div>-->
+			</div>*/ ?>
 		</div>
 	</div>
 
@@ -1273,6 +1295,11 @@
 	</div>
 </div>
 
+<div class="team-section container">
+	<p class="title">Our Team</p>
+	<?php get_template_part( 'template-parts/team' ); ?>
+</div>
+
 <div class="container">
 	<div class="title-block title-block2" id="about-project">
 		<p class="title-light wow fadeInUp" style="animation-delay: .3s;">Caritas Ukraine is actively working on the implementation of its <b>Water, Sanitation, and Hygiene (WASH) program</b> to support affected regions.</p>
@@ -1324,7 +1351,15 @@
 <div class="container">
 	<div class="results">
 		<p class="title">Our Impact</p>
-		<p class="title-light">In 2024, WASH projects by Caritas Ukraine have already helped <b>200,000</b> people in Donetsk, Dnipropetrovsk, Kharkiv, Zaporizhzhia, and Mykolaiv regions. However, the needs continue to grow every day.</p>
+		<div class="col">
+			<p class="title-light">Since 2022, Caritas Ukraine’s WASH Programme has:</p>
+			<div class="desc">
+				<p><b>1.326+ million people</b> gained access to WASH services</p>
+				<p><b>400+ WASH facilities and systems</b> rehabilitated, upgraded or supported</p>
+				<p><b>EUR 35+ million invested</b> in water supply restoration and WASH response</p>
+				<p>The response includes water supply, treatment and wastewater systems, heating and backup energy solutions, sanitation and hygiene facilities, water quality monitoring equipment and support to utility repair teams.</p>
+			</div>
+		</div>
 	</div>
 	<div class="stories" id="stories">
 		<p class="title">Stories of People<br>from Affected Regions</p>
@@ -1389,21 +1424,25 @@
 	</div>
 
 	<div class="help wow fadeInUp" style="animation-delay: .3s;">
-		<p class="title">How Can You Help?</p>
+<!--		<div>-->
+			<p class="title">How Can You Help?</p>
+<!--		</div>-->
 
 		<div class="item">
-			<p class="subtitle">Visit the WASH in WAR Exhibition</p>
-			<p class="desc">Learn more about the issue and the real stories of those affected.</p>
+			<p class="subtitle">Become a Partner</p>
+			<p class="desc">Join #WASHinWAR to develop international, professional and technical cooperation for Ukraine’s water security and recovery.</p>
 		</div>
-
 		<div class="item">
-			<p class="subtitle">Spread the Word</p>
-			<p class="desc">Share information about this initiative on social media to raise awareness about the impact of war on Ukraine's water resources.</p>
+			<p class="subtitle">Share Expertise and Solutions</p>
+			<p class="desc">Contribute expertise, technologies and practical solutions, or join professional exchanges, expert discussions and capacity-building activities.</p>
 		</div>
-
 		<div class="item">
-			<p class="subtitle">Support Caritas Ukraine</p>
-			<p class="desc">Join us in restoring access to clean water in affected regions.</p>
+			<p class="subtitle">Host #WASHinWAR</p>
+			<p class="desc">Bring the #WASHinWAR exhibition, expert dialogue or professional event to your country, city or institution.</p>
+		</div>
+		<div class="item">
+			<p class="subtitle">Support WASH Recovery in Ukraine</p>
+			<p class="desc">Support Caritas Ukraine in restoring access to safe water and strengthening resilient WASH infrastructure in affected communities.</p>
 		</div>
 	</div>
 

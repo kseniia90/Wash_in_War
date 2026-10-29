@@ -1338,6 +1338,13 @@
 </div>
 
 <div class="container">
+	<div class="team-section">
+		<p class="title">Команда</p>
+		<?php get_template_part( 'template-parts/team' ); ?>
+	</div>
+</div>
+
+<div class="container">
     <div class="title-block title-block2" id="about-project">
         <p class="title-light wow fadeInUp" style="animation-delay: .3s;">Карітас України активно працює над
             реалізацією програми допомоги у сфері води, санітарії та гігієни (WASH) для постраждалих регіонів.</p>

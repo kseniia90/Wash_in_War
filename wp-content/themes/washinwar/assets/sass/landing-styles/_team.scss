@@ -102,5 +102,18 @@ $bp-desktop: 1024px;
 		.icon {
 			display: block;
 		}
+
+		@media (max-width: $bp-mobile - 1) {
+			flex-direction: row;
+
+			.content {
+				//flex-basis: 70%;
+			}
+
+			.image-wrapper {
+				flex-basis: min(50%, 165px);
+				flex-shrink: 0;
+			}
+		}
 	}
 }

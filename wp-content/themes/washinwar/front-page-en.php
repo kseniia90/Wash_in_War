@@ -1295,9 +1295,11 @@
 	</div>
 </div>
 
-<div class="team-section container">
-	<p class="title">Our Team</p>
-	<?php get_template_part( 'template-parts/team' ); ?>
+<div class="container">
+	<div class="team-section">
+		<p class="title">Our Team</p>
+		<?php get_template_part( 'template-parts/team' ); ?>
+	</div>
 </div>
 
 <div class="container">
